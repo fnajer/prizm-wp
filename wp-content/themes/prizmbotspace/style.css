@@ -20,6 +20,8 @@ js - поправляются пути полные для иконок пере
 
 
 
+
+
 /*single article styles*/
 .single-article__img {
 	width: 100%;
@@ -36,9 +38,37 @@ js - поправляются пути полные для иконок пере
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	padding: 72px 0;
+}
+@media screen and (max-width: 768px) {
+	.single-article__body {
+		padding: 32px;
+	}
 }
 
 
+.trading  {
+	height: auto;
+}
+.trading__blocks {
+	flex-wrap: wrap;
+	align-items: flex-end;
+}
+.trading__block:nth-child(3n + 3) {
+	margin-top: 20px;
+}
+.trading:before {
+	top: 9%;
+}
+@media screen and (max-width: 980px) {
+	.trading .trading__blocks {
+		max-width: none;
+		flex-wrap: nowrap;
+	}
+	.trading__block:nth-child(3n + 3) {
+		margin-top: 0;
+	}
+}
 
 /* promo width */
 html[lang='ru-RU'] .promo__container { 

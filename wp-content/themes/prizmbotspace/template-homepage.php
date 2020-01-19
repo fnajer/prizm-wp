@@ -772,6 +772,22 @@ get_header();
             </div>
             <div class="trading__block">
               <div class="trading__img trading__img_circle">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/sigen-pro.png" width="62" height="69" alt="Logo of coin name site" />
+              </div>
+              <span class="trading__note">TRADING PLATFORM</span>
+              <span class="trading__name">sigen.pro</span>
+              <button class="button button_theme_purple button_mr_none">Buy PRIZM</button>
+            </div>
+            <div class="trading__block">
+              <div class="trading__img trading__img_circle">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/sigen-pro.png" width="62" height="69" alt="Logo of coin name site" />
+              </div>
+              <span class="trading__note">TRADING PLATFORM</span>
+              <span class="trading__name">sigen.pro</span>
+              <button class="button button_theme_purple button_mr_none">Buy PRIZM</button>
+            </div>
+            <div class="trading__block">
+              <div class="trading__img trading__img_circle">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/btc-alpha.png" width="94" height="54" alt="Logo of coin name site" />
               </div>
               <span class="trading__note">CRYPTO EXCHANGE</span>
