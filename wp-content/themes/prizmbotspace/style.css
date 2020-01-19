@@ -21,13 +21,12 @@ js - поправляются пути полные для иконок пере
 .header__menu li a,
 .footer__menu li a {
 	font-size: 16px;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.5;
-    color: #fff;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.5;
+	color: #fff;
 	font-weight: 500;
-    letter-spacing: normal;
-    //text-align: right;
+	letter-spacing: normal;
 }
 .menu_extra li a {
 	color: rgba(224, 224, 255, 0.6);
@@ -65,9 +64,12 @@ js - поправляются пути полные для иконок пере
 	justify-content: space-between;
 }
 
-iframe {
-	width: 100%;
+@media screen and (max-width: 1200px) {
+	iframe {
+		width: 100%;
+	}
 }
+
 
 
 .breadcrumbs__crumb {
@@ -79,8 +81,16 @@ iframe {
 .menu {
 	align-items: center;
 }
-.header__menu li {
+.menu li {
 	text-align: center;
+}
+.header__menu a {
+	display: inline-block;
+	padding: 10px 30px;
+	cursor: pointer;
+}
+.header__menu li {
+	padding: 0;
 }
 
 
@@ -130,4 +140,72 @@ html[lang='ru-RU'] .promo__container {
 html[lang='zh-CN'] .promo { 
   display: flex;
 	align-items: center;
+}
+
+
+.promo.container,
+.projects,
+.mobile,
+.calculator,
+.steps,
+.affiliates,
+.trading,
+.ratings,
+.news     {
+	padding: 72px 0;
+	margin-bottom: 0;
+}
+.projects,
+.ratings  {
+	align-items: center;
+}
+.steps {
+	height: 600px;
+}
+.steps__blocks:after {
+	top: 75px;
+}
+.steps:before {
+	left: 43%;
+	top: 29%;
+}
+.trading:before {
+	left: 82%;
+	top: 21%;
+}
+.trading__blocks {
+	margin: 0;
+}
+.join {
+	margin-bottom: 48px;
+	padding: 0;
+}
+.news__item {
+	margin-bottom: 0;
+}
+@media screen and (max-width: 1200px) {
+	.projects {
+		padding: 72px 0 !important;
+	}
+	.news__item {
+		margin-bottom: 60px;
+	}
+}
+@media screen and (max-width: 980px) {
+	.projects {
+		padding: 0 28px !important;
+	}
+	.steps {
+		height: auto;
+	}
+	.steps__right-container {
+		padding-top: 100px;
+	}
+	.steps:before {
+		left: 47%;
+    top: 61%;
+	}
+	.trading__left-container {
+		margin-bottom: 40px;
+	}
 }
