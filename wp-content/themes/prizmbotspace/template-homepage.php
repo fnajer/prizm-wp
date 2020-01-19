@@ -8,7 +8,7 @@ get_header();
 <!-- only content wrapper -->
     <main class="content-wrapper">
 
-      <section class="promo container">
+      <section class="promo container container_indent">
         <div class="promo__container">
           <h2 class="heading"><?php pll_e('promo_title'); ?></h2>
           <p class="text"><?php format_paragraph(pll__('promo_paragraph')); ?></p>
@@ -26,7 +26,7 @@ get_header();
       
       </section>
 
-      <section class="projects container">
+      <section class="projects container container_indent">
         <div class="projects__left-container">
           <div class="project project_prizmbot">
             <div class="project__container">
@@ -68,7 +68,7 @@ get_header();
         </div>
       </section>
 
-      <section class="mobile container">
+      <section class="mobile container container_indent">
         <div class="mobile__container">
           <h3 class="subtitle"><?php pll_e('mobile_subtitle'); ?></h3>
           <h2 class="heading"><?php pll_e('mobile_title'); ?></h2>
@@ -122,7 +122,7 @@ get_header();
         </div>
       </section>
 
-      <section class="calculator container">
+      <section class="calculator container container_indent">
         <div class="calculator__left-container">
           <div class="calculator__tabs">
             <button data-tab="prizm" class="tab tab_active">Prizm Income</button>
@@ -623,7 +623,7 @@ get_header();
         </div>
       </section>
 
-      <section class="steps container">
+      <section class="steps container container_indent">
         <div class="steps__left-container">
           <h3 class="subtitle"><?php pll_e('steps_subtitle'); ?></h3>
           <h2 class="heading"><?php pll_e('steps_title'); ?></h2>
@@ -677,7 +677,7 @@ get_header();
         </divs>
       </section>
 
-      <section class="affiliates container">
+      <section class="affiliates container container_indent">
         <div class="affiliates__left-container">
           
           <table class="affiliates__table">
@@ -755,7 +755,7 @@ get_header();
         </div>
       </section>
 
-      <section class="trading container">
+      <section class="trading container container_indent">
         <div class="trading__left-container">
           <h3 class="subtitle"><?php pll_e('trading_subtitle'); ?></h3>
           <h2 class="heading"><?php pll_e('trading_title'); ?></h2>
@@ -782,7 +782,7 @@ get_header();
         </div>
       </section>
 
-      <section class="ratings container">
+      <section class="ratings container container_indent">
         <div class="ratings__left-container">
           <div class="rating rating_market">
             <div class="rating__container">
@@ -833,7 +833,7 @@ get_header();
         </div>
       </section>
 
-      <section class="news container">
+      <section class="news container container_indent">
         <h3 class="subtitle"><?php pll_e('news_subtitle'); ?></h3>
         <h2 class="heading"><?php pll_e('news_title'); ?></h2>
         <div class="news__list">
@@ -873,18 +873,20 @@ get_header();
       </section>
 
       <section class="join">
-        <div class="join__container">
-          <h3 class="subtitle"><?php pll_e('join_subtitle'); ?></h3>
-          <h2 class="heading"><?php pll_e('join_title'); ?> <span class="text-purple"></span></h2>
-          <button class="button button_theme_purple button_with-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-              <g fill="none" fill-rule="evenodd">
-                  <path d="M-2-2h24v24H-2z"/>
-                  <path fill="#FFF" fill-rule="nonzero" d="M10 0c5.523 0 10 4.477 10 10s-4.477 10-10 10S0 15.523 0 10 4.477 0 10 0zm4.979 6.545c-.073-.614-.817-.479-1.23-.34-2.128.809-4.234 1.678-6.332 2.563-1.219.54-2.524 1.077-3.693 1.721-.57.417.399.693 1.06.966.736.227 1.595.573 2.332.168 1.443-.83 2.778-1.83 4.147-2.773.249-.16 1.004-.68.749-.062-.948 1.036-2.008 1.873-3.008 2.858-.35.285-.714.858-.322 1.257 1.198.838 2.422 1.65 3.635 2.47.505.404 1.295.077 1.406-.553.322-1.892.653-3.783.939-5.681.112-.863.277-1.726.316-2.594z"/>
-              </g>
-            </svg>
-            <?php pll_e('get_in_touch'); ?>
-          </button>
+        <div class="container">
+          <div class="join__container">
+            <h3 class="subtitle"><?php pll_e('join_subtitle'); ?></h3>
+            <h2 class="heading"><?php pll_e('join_title'); ?> <span class="text-purple"></span></h2>
+            <button class="button button_theme_purple button_with-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                <g fill="none" fill-rule="evenodd">
+                    <path d="M-2-2h24v24H-2z"/>
+                    <path fill="#FFF" fill-rule="nonzero" d="M10 0c5.523 0 10 4.477 10 10s-4.477 10-10 10S0 15.523 0 10 4.477 0 10 0zm4.979 6.545c-.073-.614-.817-.479-1.23-.34-2.128.809-4.234 1.678-6.332 2.563-1.219.54-2.524 1.077-3.693 1.721-.57.417.399.693 1.06.966.736.227 1.595.573 2.332.168 1.443-.83 2.778-1.83 4.147-2.773.249-.16 1.004-.68.749-.062-.948 1.036-2.008 1.873-3.008 2.858-.35.285-.714.858-.322 1.257 1.198.838 2.422 1.65 3.635 2.47.505.404 1.295.077 1.406-.553.322-1.892.653-3.783.939-5.681.112-.863.277-1.726.316-2.594z"/>
+                </g>
+              </svg>
+              <?php pll_e('get_in_touch'); ?>
+            </button>
+          </div>
         </div>
       
       </section>

@@ -60,16 +60,16 @@ get_header();
             <h4 class="system__heading">Summary</h4>
             <ul class="system__list">
               <li>
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/checkbox.svg" alt="Logo of minter site" />
-                <p class="system__text">Without his parents’ consent they — the killers — had bombarded the unique nodule which had formed in his brain, had attacked it with radioactive cobalt.</p>
+                <p class="system__text"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/checkbox.svg" alt="Logo of minter site" />To own your crypto assets, you need to manage your own private keys.</p>
               </li>
               <li>
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/checkbox.svg" alt="Logo of minter site" />
-                <p class="system__text">It had been a pit of corpses and dead bones and he had struggled for years to get up from it. The donkey and especially the toad, the creatures most important to him, had vanished, had become extinct; only rotting fragments, an eyeless head here.</p>
+                <p class="system__text"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/checkbox.svg" alt="Logo of minter site" />Ledger hardware wallets make private key management easy and secure.</p>
               </li>
               <li>
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/checkbox.svg" alt="Logo of minter site" />
-                <p class="system__text">The donkey and especially the toad, the creatures most important to him, had vanished, had become extinct; only rotting fragments.</p>
+                <p class="system__text"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/checkbox.svg" alt="Logo of minter site" />Each unique 24-word recovery phrase creates a new set of private keys.</p>
+              </li>
+              <li>
+                <p class="system__text"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/checkbox.svg" alt="Logo of minter site" />Make sure you secure your 24-word recovery phrase properly. <a class="system__link" href="#">Learn more</a></p>
               </li>
             </ul>
           </div>
