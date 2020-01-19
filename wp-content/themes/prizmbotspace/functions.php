@@ -177,7 +177,7 @@ function true_misha_func( $atts ){
 	$path = get_template_directory_uri() . '/assets/img/plus.svg';
 	return "<div class='faq__block'>
               <div class='faq__head'>
-                <h4 class='faq__heading'>About @PRIZMSPACEBOT (General Info)</h4>
+                <h4 class='faq__heading'>About @RewardSpaceBot (General Info)</h4>
                 <div class='faq__btn'>
                   <img src='$path' class='faq__svg' alt='open faq'/>
                 </div>
@@ -242,7 +242,7 @@ function format_paragraph( $text ){
 	
 	if ($pos !== false) {
 		preg_match_all('/\[@\](.*?)\[@\]/', $text, $result_text);
-		echo preg_replace('/\[@\](.*?)\[@\]/', "<span class='text-purple'>@PRIZMSPACEBOT</span>", $text);
+		echo preg_replace('/\[@\](.*?)\[@\]/', "<span class='text-purple'>@RewardSpaceBot</span>", $text);
 	} else {
 		echo $text;
 	}
