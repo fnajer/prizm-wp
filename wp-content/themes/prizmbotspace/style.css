@@ -70,6 +70,104 @@ js - поправляются пути полные для иконок пере
 	}
 }
 
+
+.text-purple {
+	word-wrap: break-word;
+}
+.button_with-icon {
+	padding-left: 50px;
+}
+.button_with-icon svg {
+	top: 13px;
+	left: 14px;
+}
+.button {
+	margin-right: 15px;
+}
+.subtitle {
+	padding-left: 10px;
+	padding-top: 10px;
+}
+.mobile__item {
+	max-width: 350px;
+}
+.footer > .footer__menu {
+	text-transform: uppercase;
+}
+.social svg path:last-child {
+	fill: rgba(224, 224, 255, 0.6);
+}
+.mobile__item > svg:last-of-type path:last-child {
+	fill: rgba(224, 224, 255, 0.4);
+}
+
+.mobile__circle {
+	width: 64px;
+	height: 64px;
+	border-radius: 50%;
+	background-color: rgba(224, 224, 255, 0.02);
+	position: absolute;
+	left: 15px;
+	top: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.mobile__item svg:first-child {
+	position: static !important;
+}
+.calculator__tabs {
+	margin-bottom: 25px;
+}
+
+@media screen and (max-width: 980px) {
+	.steps__right-container .steps__blocks:after {
+			top: 539px;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.container {
+		max-width: 1110px;
+	}
+	.mobile {
+		height: 710px;
+	}
+	.social {
+		width: 480px;
+	}
+	.steps__right-container {
+		width: 538px;
+	}
+	.join .container {
+		padding-right: 45px;
+	}
+}
+
+@media screen and (min-width: 980px) {
+	.menu_extra {
+		max-width: 560px;
+    width: 100%;
+	}
+
+	.steps__blocks {
+		margin-top: 83px;
+	}
+	.steps:before {
+		top: 35%;
+		left: 42%;
+	}
+	.steps__blocks:after {
+		top: 98px;
+	}
+	.step:before {
+		left: 0;
+	}
+	.step:after {
+		left: 8px;
+	}
+}
+
 /* promo width */
 html[lang='ru-RU'] .promo__container { 
   max-width: 530px;
