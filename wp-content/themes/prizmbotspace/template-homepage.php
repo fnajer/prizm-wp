@@ -764,36 +764,42 @@ get_header();
       </section>
 
       <section class="trading container container_indent">
-        <div class="trading__left-container">
+        <div class="ratings__right-container">
           <h3 class="subtitle"><?php pll_e('trading_subtitle'); ?></h3>
           <h2 class="heading"><?php pll_e('trading_title'); ?></h2>
         </div>
-        <div class="trading__right-container">
-          <div class="trading__blocks">
+        <div class="ratings__left-container">
+          <div class="rating rating_market">
             <div class="trading__block">
               <div class="trading__img trading__img_circle">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/sigen-pro.png" width="62" height="69" alt="Logo of coin name site" />
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/bit-team.png" width="62" height="69" alt="Logo of coin name site" />
               </div>
               <span class="trading__note">TRADING PLATFORM</span>
-              <span class="trading__name">sigen.pro</span>
+              <span class="trading__name">bit.team</span>
               <button class="button button_theme_purple button_mr_none">Buy PRIZM</button>
             </div>
+          </div>
+          <div class="rating rating_hills">
             <div class="trading__block">
               <div class="trading__img trading__img_circle">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/sigen-pro.png" width="62" height="69" alt="Logo of coin name site" />
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hotbit.png" width="62" height="69" alt="Logo of coin name site" />
               </div>
               <span class="trading__note">TRADING PLATFORM</span>
-              <span class="trading__name">sigen.pro</span>
+              <span class="trading__name">hotbit.io</span>
               <button class="button button_theme_purple button_mr_none">Buy PRIZM</button>
             </div>
+          </div>
+          <div class="rating rating_gecko">
             <div class="trading__block">
               <div class="trading__img trading__img_circle">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/sigen-pro.png" width="62" height="69" alt="Logo of coin name site" />
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/livecoin.png" width="62" height="69" alt="Logo of coin name site" />
               </div>
               <span class="trading__note">TRADING PLATFORM</span>
-              <span class="trading__name">sigen.pro</span>
+              <span class="trading__name">livecoin.net</span>
               <button class="button button_theme_purple button_mr_none">Buy PRIZM</button>
             </div>
+          </div>
+          <div class="rating rating_panic">
             <div class="trading__block">
               <div class="trading__img trading__img_circle">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/btc-alpha.png" width="94" height="54" alt="Logo of coin name site" />

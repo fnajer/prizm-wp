@@ -74,6 +74,42 @@ js - поправляются пути полные для иконок пере
 	}
 }
 
+
+.trading:before {
+	left: 54%;
+	top: 69%;
+}
+.trading .ratings__left-container {
+	margin-right: 0;
+}
+.trading .rating_panic {
+	margin-top: 182px;
+}
+.rating_market .trading__block:after {
+	content: "";
+	position: absolute;
+	bottom: -195px;
+	right: -170px;
+	z-index: -1;
+	width: 255px;
+	height: 255px;
+	border-radius: 260px;
+	background-image: -o-linear-gradient(315deg,#f0a,#9c42f5 53%,#5d2de1);
+	background-image: linear-gradient(135deg,#f0a,#9c42f5 53%,#5d2de1);
+}
+.rating_hills .trading__block:after {
+	content: "";
+	position: absolute;
+	top: -30px;
+	right: -30px;
+	z-index: -1;
+	width: 67px;
+	height: 67px;
+	border-radius: 260px;
+	background-image: -o-linear-gradient(315deg,#f0a,#9c42f5 53%,#5d2de1);
+	background-image: linear-gradient(135deg,#f0a,#9c42f5 53%,#5d2de1);
+}
+
 .button_with-icon {
 	padding-left: 50px;
 }
