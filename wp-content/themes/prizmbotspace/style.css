@@ -68,12 +68,11 @@ js - поправляются пути полные для иконок пере
 	.trading__block:nth-child(3n + 3) {
 		margin-top: 0;
 	}
+	.text-purple {
+		word-wrap: break-word;
+	}
 }
 
-
-.text-purple {
-	word-wrap: break-word;
-}
 .button_with-icon {
 	padding-left: 50px;
 }
@@ -88,9 +87,7 @@ js - поправляются пути полные для иконок пере
 	padding-left: 10px;
 	padding-top: 10px;
 }
-.mobile__item {
-	max-width: 350px;
-}
+
 .footer > .footer__menu {
 	text-transform: uppercase;
 }
@@ -124,6 +121,9 @@ js - поправляются пути полные для иконок пере
 	.steps__right-container .steps__blocks:after {
 			top: 539px;
 	}
+	.footer__made {
+		display: initial;
+	}
 }
 
 @media screen and (min-width: 1200px) {
@@ -142,9 +142,15 @@ js - поправляются пути полные для иконок пере
 	.join .container {
 		padding-right: 45px;
 	}
+	.footer__made {
+		display: initial;
+	}
 }
 
 @media screen and (min-width: 980px) {
+	.promo {
+		background-position: 59% center;
+	}
 	.menu_extra {
 		max-width: 560px;
     width: 100%;
@@ -165,6 +171,11 @@ js - поправляются пути полные для иконок пере
 	}
 	.step:after {
 		left: 8px;
+	}
+}
+@media screen and (min-width: 768px) {
+	.mobile__item {
+		max-width: 350px;
 	}
 }
 

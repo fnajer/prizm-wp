@@ -128,10 +128,7 @@
           <li>Sales & Refunds</li>
           <li>Legal</li>
         </ul>-->
-        <span>
-          madeBy 
-          <span class="footer__made">roobinium</span>
-        </span>
+        <span>made by <span class="footer__made">roobinium</span></span>
       </div>
     </footer>
   </div> <!-- end main wrapper -->
