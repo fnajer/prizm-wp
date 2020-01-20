@@ -8,23 +8,25 @@ get_header();
 <!-- only content wrapper -->
     <main class="content-wrapper">
 
-      <section class="promo container container_indent">
-        <div class="promo__container">
-          <h2 class="heading"><?php pll_e('promo_title'); ?></h2>
-          <p class="text"><?php format_paragraph(pll__('promo_paragraph')); ?></p>
-          <button class="button button_theme_purple button_with-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-              <g fill="none" fill-rule="evenodd">
-                  <path d="M-2-2h24v24H-2z"/>
-                  <path fill="#FFF" fill-rule="nonzero" d="M10 0c5.523 0 10 4.477 10 10s-4.477 10-10 10S0 15.523 0 10 4.477 0 10 0zm4.979 6.545c-.073-.614-.817-.479-1.23-.34-2.128.809-4.234 1.678-6.332 2.563-1.219.54-2.524 1.077-3.693 1.721-.57.417.399.693 1.06.966.736.227 1.595.573 2.332.168 1.443-.83 2.778-1.83 4.147-2.773.249-.16 1.004-.68.749-.062-.948 1.036-2.008 1.873-3.008 2.858-.35.285-.714.858-.322 1.257 1.198.838 2.422 1.65 3.635 2.47.505.404 1.295.077 1.406-.553.322-1.892.653-3.783.939-5.681.112-.863.277-1.726.316-2.594z"/>
-              </g>
-            </svg>
-            <?php pll_e('try_now'); ?>
-          </button>
-          <button class="button button_theme_dark"><?php pll_e('promo_btn'); ?></button>
-        </div>
-      
-      </section>
+      <div class="promo-bg">
+        <section class="promo container container_indent">
+          <div class="promo__container">
+            <h2 class="heading"><?php pll_e('promo_title'); ?></h2>
+            <p class="text"><?php format_paragraph(pll__('promo_paragraph')); ?></p>
+            <button class="button button_theme_purple button_with-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                <g fill="none" fill-rule="evenodd">
+                    <path d="M-2-2h24v24H-2z"/>
+                    <path fill="#FFF" fill-rule="nonzero" d="M10 0c5.523 0 10 4.477 10 10s-4.477 10-10 10S0 15.523 0 10 4.477 0 10 0zm4.979 6.545c-.073-.614-.817-.479-1.23-.34-2.128.809-4.234 1.678-6.332 2.563-1.219.54-2.524 1.077-3.693 1.721-.57.417.399.693 1.06.966.736.227 1.595.573 2.332.168 1.443-.83 2.778-1.83 4.147-2.773.249-.16 1.004-.68.749-.062-.948 1.036-2.008 1.873-3.008 2.858-.35.285-.714.858-.322 1.257 1.198.838 2.422 1.65 3.635 2.47.505.404 1.295.077 1.406-.553.322-1.892.653-3.783.939-5.681.112-.863.277-1.726.316-2.594z"/>
+                </g>
+              </svg>
+              <?php pll_e('try_now'); ?>
+            </button>
+            <button class="button button_theme_dark"><?php pll_e('promo_btn'); ?></button>
+          </div>
+        
+        </section>
+      </div>
 
       <section class="projects container container_indent">
         <div class="projects__left-container">

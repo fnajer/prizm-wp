@@ -149,9 +149,6 @@ js - поправляются пути полные для иконок пере
 }
 
 @media screen and (min-width: 980px) {
-	.promo {
-		background-position: 59% center;
-	}
 	.menu_extra {
 		max-width: 560px;
     width: 100%;
@@ -175,6 +172,14 @@ js - поправляются пути полные для иконок пере
 	}
 }
 @media screen and (min-width: 768px) {
+	.promo-bg {
+		width: 100%;
+		max-width: 1440px;
+		background: url('assets/img/promo.jpg') 50% no-repeat;
+	}
+	.promo {
+		background: none;
+	}
 	.mobile__item {
 		max-width: 350px;
 	}
@@ -182,6 +187,10 @@ js - поправляются пути полные для иконок пере
 
 .step__text .text-purple {
 	font-size: 13px;
+}
+
+.button_mr_none {
+	margin-right: 0 !important;
 }
 
 /* promo width */
