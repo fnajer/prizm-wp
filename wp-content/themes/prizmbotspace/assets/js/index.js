@@ -1,38 +1,96 @@
 // Main js file
 // see more: https://github.com/vedees/webpack-template/blob/master/README.md#import-js-files
 
+// this is need move to separate module, and wrap on jQuery() function
+// its need for get percentage values on scripts after loading all DOM. Although, this script whatever lies on bottom of html file
+
 jQuery(document).ready( function($) {
+
+  const prizmData = calculatePrizm(currentBalanceValue, currentTimeValue);
+  renderPZM(prizmData);
+  function renderPZM(prizmData) {
+    const { 
+      pzmPerDay, pzmPerMonth, pzmPerYear,
+      percentPerDay, percentPerMonth, percentPerYear
+    } = prizmData;
+    for (let i = 0; i < 8; i++) {
+      const factor = parseFloat(jQuery(`table[data-tab=prizm] .calculator__table-body tr:eq(${i}) td:eq(1)`).text());
+      $(`table[data-tab=prizm] .calculator__table-body tr:eq(${i}) td:eq(2),
+        table[data-tab=prizm] .calculator__mobile-body tr:eq(${i}) td:eq(2) .item-row__value`)
+       .text( (pzmPerDay * factor).toFixed(2) );
+      $(`table[data-tab=prizm] .calculator__table-body tr:eq(${i}) td:eq(3),
+        table[data-tab=prizm] .calculator__mobile-body tr:eq(${i}) td:eq(3) .item-row__value`)
+        .text( (pzmPerMonth * factor).toFixed(2) );
+      $(`table[data-tab=prizm] .calculator__table-body tr:eq(${i}) td:eq(4),
+        table[data-tab=prizm] .calculator__mobile-body tr:eq(${i}) td:eq(4) .item-row__value`)
+        .text( (pzmPerYear * factor).toFixed(2) );
+         
+      $(`table[data-tab=percentage] .calculator__table-body tr:eq(${i}) td:eq(2),
+        table[data-tab=percentage] .calculator__mobile-body tr:eq(${i}) td:eq(2) .item-row__value`)
+       .text( (percentPerDay * factor).toFixed(2) );
+      $(`table[data-tab=percentage] .calculator__table-body tr:eq(${i}) td:eq(3),
+        table[data-tab=percentage] .calculator__mobile-body tr:eq(${i}) td:eq(3) .item-row__value`)
+        .text( (percentPerMonth * factor).toFixed(2) );
+      $(`table[data-tab=percentage] .calculator__table-body tr:eq(${i}) td:eq(4),
+        table[data-tab=percentage] .calculator__mobile-body tr:eq(${i}) td:eq(4) .item-row__value`)
+        .text( (percentPerYear * factor).toFixed(2) );
+    }
+  }
+
   var rangeBalanceBody = $( "#range-balance-body" );
   var rangeBalanceTotal = $( "#range-balance-total" );
+  rangeBalanceTotal.on('change', function() {
+    const newValue = $(this).val();
+    rangeBalanceBody.text( newValue );
+    $( "#slider-balance" ).slider( "value", newValue );
+  })
   	$( "#slider-balance" ).slider({
       orientation: "horizontal",
       range: "min",
-      max: 255,
-      value: 127,
+      min: 0,
+      max: 50000,
+      value: currentBalanceValue,
       create: function() {
         rangeBalanceBody.text( $( this ).slider( "value" ) );
-        rangeBalanceTotal.text( $( this ).slider( "value" ) );
+        rangeBalanceTotal.val( $( this ).slider( "value" ) );
       },
       slide: function( event, ui ) {
         rangeBalanceBody.text( ui.value );
-        rangeBalanceTotal.text( ui.value );
+        rangeBalanceTotal.val( ui.value );
+      },
+      change: function( event, ui ) {
+        currentBalanceValue = ui.value;
+        const prizmData = calculatePrizm(currentBalanceValue, currentTimeValue);
+        renderPZM(prizmData);
       },
     });
     
     var rangeTimeBody = $( "#range-time-body" );
     var rangeTimeTotal = $( "#range-time-total" );
+    rangeTimeTotal.on('change', function() {
+      const newValue = $(this).val();
+      rangeTimeBody.text( newValue );
+      $( "#slider-time" ).slider( "value", newValue );
+    })
       $( "#slider-time" ).slider({
         orientation: "horizontal",
         range: "min",
-        max: 255,
-        value: 127,
+        min: 24,
+        max: 720,
+        step: 24,
+        value: currentTimeValue,
         create: function() {
           rangeTimeBody.text( $( this ).slider( "value" ) );
-          rangeTimeTotal.text( $( this ).slider( "value" ) );
+          rangeTimeTotal.val( $( this ).slider( "value" ) );
         },
         slide: function( event, ui ) {
           rangeTimeBody.text( ui.value );
-          rangeTimeTotal.text( ui.value );
+          rangeTimeTotal.val( ui.value );
+        },
+        change: function( event, ui ) {
+          currentTimeValue = ui.value;
+          const prizmData = calculatePrizm(currentBalanceValue, currentTimeValue);
+          renderPZM(prizmData);
         },
       });
     
