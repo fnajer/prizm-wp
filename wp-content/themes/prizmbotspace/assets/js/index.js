@@ -13,27 +13,28 @@ jQuery(document).ready( function($) {
       pzmPerDay, pzmPerMonth, pzmPerYear,
       percentPerDay, percentPerMonth, percentPerYear
     } = prizmData;
-    for (let i = 0; i < 8; i++) {
-      const factor = parseFloat(jQuery(`table[data-tab=prizm] .calculator__table-body tr:eq(${i}) td:eq(1)`).text());
+    console.log(prizmData);
+    for (let i = 0; i < 3; i++) {
+      //const factor = parseFloat(jQuery(`table[data-tab=prizm] .calculator__table-body tr:eq(${i}) td:eq(1)`).text());
       $(`table[data-tab=prizm] .calculator__table-body tr:eq(${i}) td:eq(2),
         table[data-tab=prizm] .calculator__mobile-body tr:eq(${i}) td:eq(2) .item-row__value`)
-       .text( (pzmPerDay * factor).toFixed(2) );
+       .text( pzmPerDay[i].toFixed(2) );
       $(`table[data-tab=prizm] .calculator__table-body tr:eq(${i}) td:eq(3),
         table[data-tab=prizm] .calculator__mobile-body tr:eq(${i}) td:eq(3) .item-row__value`)
-        .text( (pzmPerMonth * factor).toFixed(2) );
+        .text( pzmPerMonth[i].toFixed(2) );
       $(`table[data-tab=prizm] .calculator__table-body tr:eq(${i}) td:eq(4),
         table[data-tab=prizm] .calculator__mobile-body tr:eq(${i}) td:eq(4) .item-row__value`)
-        .text( (pzmPerYear * factor).toFixed(2) );
+        .text( pzmPerYear[i].toFixed(2) );
          
       $(`table[data-tab=percentage] .calculator__table-body tr:eq(${i}) td:eq(2),
         table[data-tab=percentage] .calculator__mobile-body tr:eq(${i}) td:eq(2) .item-row__value`)
-       .text( (percentPerDay * factor).toFixed(2) );
+       .text( percentPerDay[i].toFixed(2) );
       $(`table[data-tab=percentage] .calculator__table-body tr:eq(${i}) td:eq(3),
         table[data-tab=percentage] .calculator__mobile-body tr:eq(${i}) td:eq(3) .item-row__value`)
-        .text( (percentPerMonth * factor).toFixed(2) );
+        .text( percentPerMonth[i].toFixed(2) );
       $(`table[data-tab=percentage] .calculator__table-body tr:eq(${i}) td:eq(4),
         table[data-tab=percentage] .calculator__mobile-body tr:eq(${i}) td:eq(4) .item-row__value`)
-        .text( (percentPerYear * factor).toFixed(2) );
+        .text( percentPerYear[i].toFixed(2) );
     }
   }
 
