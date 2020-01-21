@@ -168,7 +168,7 @@ get_header();
                 <td class="mobile-body__item-head">less than 1,000</td>
                 <td class="mobile-body__item-row">
                   <span class="item-row__name">COF</span>
-                  <span class="item-row__value">1</span>
+                  <span class="item-row__value">0.7</span>
                 </td>
                 <td class="mobile-body__item-row">
                   <span class="item-row__name">Per Day</span>
@@ -187,7 +187,7 @@ get_header();
                 <td class="mobile-body__item-head">from 1,000</td>
                 <td class="mobile-body__item-row">
                   <span class="item-row__name">COF</span>
-                  <span class="item-row__value">2.18</span>
+                  <span class="item-row__value">0.8</span>
                 </td>
                 <td class="mobile-body__item-row">
                   <span class="item-row__name">Per Day</span>
@@ -206,102 +206,7 @@ get_header();
                 <td class="mobile-body__item-head">from 10,000</td>
                 <td class="mobile-body__item-row">
                   <span class="item-row__name">COF</span>
-                  <span class="item-row__value">2.36</span>
-                </td>
-                <td class="mobile-body__item-row">
-                  <span class="item-row__name">Per Day</span>
-                  <span class="item-row__value">166.66</span>
-                </td>
-                <td class="mobile-body__item-row">
-                  <span class="item-row__name">Per Month</span>
-                  <span class="item-row__value">5,111.70</span>
-                </td>
-                <td class="mobile-body__item-row">
-                  <span class="item-row__name">Per Year</span>
-                  <span class="item-row__value">96,937</span>
-                </td>
-              </tr>
-              <tr class="mobile-body__item mobile-body__item-extra item-extra-hide">
-                <td class="mobile-body__item-head">from 100,000</td>
-                <td class="mobile-body__item-row">
-                  <span class="item-row__name">COF</span>
-                  <span class="item-row__value">2.77</span>
-                </td>
-                <td class="mobile-body__item-row">
-                  <span class="item-row__name">Per Day</span>
-                  <span class="item-row__value">166.66</span>
-                </td>
-                <td class="mobile-body__item-row">
-                  <span class="item-row__name">Per Month</span>
-                  <span class="item-row__value">5,111.70</span>
-                </td>
-                <td class="mobile-body__item-row">
-                  <span class="item-row__name">Per Year</span>
-                  <span class="item-row__value">96,937</span>
-                </td>
-              </tr>
-              <tr class="mobile-body__item mobile-body__item-extra item-extra-hide">
-                <td class="mobile-body__item-head">from 1,000,000</td>
-                <td class="mobile-body__item-row">
-                  <span class="item-row__name">COF</span>
-                  <span class="item-row__value">3.05</span>
-                </td>
-                <td class="mobile-body__item-row">
-                  <span class="item-row__name">Per Day</span>
-                  <span class="item-row__value">166.66</span>
-                </td>
-                <td class="mobile-body__item-row">
-                  <span class="item-row__name">Per Month</span>
-                  <span class="item-row__value">5,111.70</span>
-                </td>
-                <td class="mobile-body__item-row">
-                  <span class="item-row__name">Per Year</span>
-                  <span class="item-row__value">96,937</span>
-                </td>
-              </tr>
-              <tr class="mobile-body__item mobile-body__item-extra item-extra-hide">
-                <td class="mobile-body__item-head">from 10,000,000</td>
-                <td class="mobile-body__item-row">
-                  <span class="item-row__name">COF</span>
-                  <span class="item-row__value">3.36</span>
-                </td>
-                <td class="mobile-body__item-row">
-                  <span class="item-row__name">Per Day</span>
-                  <span class="item-row__value">166.66</span>
-                </td>
-                <td class="mobile-body__item-row">
-                  <span class="item-row__name">Per Month</span>
-                  <span class="item-row__value">5,111.70</span>
-                </td>
-                <td class="mobile-body__item-row">
-                  <span class="item-row__name">Per Year</span>
-                  <span class="item-row__value">96,937</span>
-                </td>
-              </tr>
-              <tr class="mobile-body__item mobile-body__item-extra item-extra-hide">
-                <td class="mobile-body__item-head">from 100,000,000</td>
-                <td class="mobile-body__item-row">
-                  <span class="item-row__name">COF</span>
-                  <span class="item-row__value">3.38</span>
-                </td>
-                <td class="mobile-body__item-row">
-                  <span class="item-row__name">Per Day</span>
-                  <span class="item-row__value">166.66</span>
-                </td>
-                <td class="mobile-body__item-row">
-                  <span class="item-row__name">Per Month</span>
-                  <span class="item-row__value">5,111.70</span>
-                </td>
-                <td class="mobile-body__item-row">
-                  <span class="item-row__name">Per Year</span>
-                  <span class="item-row__value">96,937</span>
-                </td>
-              </tr>
-              <tr class="mobile-body__item mobile-body__item-extra item-extra-hide">
-                <td class="mobile-body__item-head">from 1,000,000,000</td>
-                <td class="mobile-body__item-row">
-                  <span class="item-row__name">COF</span>
-                  <span class="item-row__value">4.37</span>
+                  <span class="item-row__value">0.9</span>
                 </td>
                 <td class="mobile-body__item-row">
                   <span class="item-row__name">Per Day</span>
@@ -330,56 +235,21 @@ get_header();
             <tbody class="calculator__table-body">
               <tr>
                 <td>less than 1,000</td>
-                <td>1</td>
+                <td>0.7</td>
                 <td>166.66</td>
                 <td>5,111.70</td>
                 <td>96,937</td>
               </tr>
               <tr>
                 <td>from 1,000</td>
-                <td>2.18</td>
+                <td>0.8</td>
                 <td>166.66</td>
                 <td>5,111.70</td>
                 <td>96,937</td>
               </tr>
               <tr>
                 <td>from 10,000</td>
-                <td>2.36</td>
-                <td>166.66</td>
-                <td>5,111.70</td>
-                <td>96,937</td>
-              </tr>
-              <tr>
-                <td>from 100,000</td>
-                <td>2.77</td>
-                <td>166.66</td>
-                <td>5,111.70</td>
-                <td>96,937</td>
-              </tr>
-              <tr>
-                <td>from 1,000,000</td>
-                <td>3.05</td>
-                <td>166.66</td>
-                <td>5,111.70</td>
-                <td>96,937</td>
-              </tr>
-              <tr>
-                <td>from 10,000,000</td>
-                <td>3.36</td>
-                <td>166.66</td>
-                <td>5,111.70</td>
-                <td>96,937</td>
-              </tr>
-              <tr>
-                <td>from 100,000,000</td>
-                <td>3.38</td>
-                <td>166.66</td>
-                <td>5,111.70</td>
-                <td>96,937</td>
-              </tr>
-              <tr>
-                <td>from 1,000,000,000</td>
-                <td>4.37</td>
+                <td>0.9</td>
                 <td>166.66</td>
                 <td>5,111.70</td>
                 <td>96,937</td>
@@ -392,7 +262,7 @@ get_header();
                 <td class="mobile-body__item-head">less than 1,000</td>
                 <td class="mobile-body__item-row">
                   <span class="item-row__name">OOF</span>
-                  <span class="item-row__value">1</span>
+                  <span class="item-row__value">0.7</span>
                 </td>
                 <td class="mobile-body__item-row">
                   <span class="item-row__name">Per Day</span>
@@ -411,7 +281,7 @@ get_header();
                 <td class="mobile-body__item-head">from 1,000</td>
                 <td class="mobile-body__item-row">
                   <span class="item-row__name">COF</span>
-                  <span class="item-row__value">2.18</span>
+                  <span class="item-row__value">0.8</span>
                 </td>
                 <td class="mobile-body__item-row">
                   <span class="item-row__name">Per Day</span>
@@ -430,102 +300,7 @@ get_header();
                 <td class="mobile-body__item-head">from 10,000</td>
                 <td class="mobile-body__item-row">
                   <span class="item-row__name">COF</span>
-                  <span class="item-row__value">2.36</span>
-                </td>
-                <td class="mobile-body__item-row">
-                  <span class="item-row__name">Per Day</span>
-                  <span class="item-row__value">166.66</span>
-                </td>
-                <td class="mobile-body__item-row">
-                  <span class="item-row__name">Per Month</span>
-                  <span class="item-row__value">5,111.70</span>
-                </td>
-                <td class="mobile-body__item-row">
-                  <span class="item-row__name">Per Year</span>
-                  <span class="item-row__value">96,937</span>
-                </td>
-              </tr>
-              <tr class="mobile-body__item mobile-body__item-extra item-extra-hide">
-                <td class="mobile-body__item-head">from 100,000</td>
-                <td class="mobile-body__item-row">
-                  <span class="item-row__name">COF</span>
-                  <span class="item-row__value">2.77</span>
-                </td>
-                <td class="mobile-body__item-row">
-                  <span class="item-row__name">Per Day</span>
-                  <span class="item-row__value">166.66</span>
-                </td>
-                <td class="mobile-body__item-row">
-                  <span class="item-row__name">Per Month</span>
-                  <span class="item-row__value">5,111.70</span>
-                </td>
-                <td class="mobile-body__item-row">
-                  <span class="item-row__name">Per Year</span>
-                  <span class="item-row__value">96,937</span>
-                </td>
-              </tr>
-              <tr class="mobile-body__item mobile-body__item-extra item-extra-hide">
-                <td class="mobile-body__item-head">from 1,000,000</td>
-                <td class="mobile-body__item-row">
-                  <span class="item-row__name">COF</span>
-                  <span class="item-row__value">3.05</span>
-                </td>
-                <td class="mobile-body__item-row">
-                  <span class="item-row__name">Per Day</span>
-                  <span class="item-row__value">166.66</span>
-                </td>
-                <td class="mobile-body__item-row">
-                  <span class="item-row__name">Per Month</span>
-                  <span class="item-row__value">5,111.70</span>
-                </td>
-                <td class="mobile-body__item-row">
-                  <span class="item-row__name">Per Year</span>
-                  <span class="item-row__value">96,937</span>
-                </td>
-              </tr>
-              <tr class="mobile-body__item mobile-body__item-extra item-extra-hide">
-                <td class="mobile-body__item-head">from 10,000,000</td>
-                <td class="mobile-body__item-row">
-                  <span class="item-row__name">COF</span>
-                  <span class="item-row__value">3.36</span>
-                </td>
-                <td class="mobile-body__item-row">
-                  <span class="item-row__name">Per Day</span>
-                  <span class="item-row__value">166.66</span>
-                </td>
-                <td class="mobile-body__item-row">
-                  <span class="item-row__name">Per Month</span>
-                  <span class="item-row__value">5,111.70</span>
-                </td>
-                <td class="mobile-body__item-row">
-                  <span class="item-row__name">Per Year</span>
-                  <span class="item-row__value">96,937</span>
-                </td>
-              </tr>
-              <tr class="mobile-body__item mobile-body__item-extra item-extra-hide">
-                <td class="mobile-body__item-head">from 100,000,000</td>
-                <td class="mobile-body__item-row">
-                  <span class="item-row__name">COF</span>
-                  <span class="item-row__value">3.38</span>
-                </td>
-                <td class="mobile-body__item-row">
-                  <span class="item-row__name">Per Day</span>
-                  <span class="item-row__value">166.66</span>
-                </td>
-                <td class="mobile-body__item-row">
-                  <span class="item-row__name">Per Month</span>
-                  <span class="item-row__value">5,111.70</span>
-                </td>
-                <td class="mobile-body__item-row">
-                  <span class="item-row__name">Per Year</span>
-                  <span class="item-row__value">96,937</span>
-                </td>
-              </tr>
-              <tr class="mobile-body__item mobile-body__item-extra item-extra-hide">
-                <td class="mobile-body__item-head">from 1,000,000,000</td>
-                <td class="mobile-body__item-row">
-                  <span class="item-row__name">COF</span>
-                  <span class="item-row__value">4.37</span>
+                  <span class="item-row__value">0.9</span>
                 </td>
                 <td class="mobile-body__item-row">
                   <span class="item-row__name">Per Day</span>
@@ -554,56 +329,21 @@ get_header();
             <tbody class="calculator__table-body">
               <tr>
                 <td>less than 1,000</td>
-                <td>1</td>
+                <td>0.7</td>
                 <td>166.66</td>
                 <td>5,111.70</td>
                 <td>96,937</td>
               </tr>
               <tr>
                 <td>from 1,000</td>
-                <td>2.18</td>
+                <td>0.8</td>
                 <td>166.66</td>
                 <td>5,111.70</td>
                 <td>96,937</td>
               </tr>
               <tr>
                 <td>from 10,000</td>
-                <td>2.36</td>
-                <td>166.66</td>
-                <td>5,111.70</td>
-                <td>96,937</td>
-              </tr>
-              <tr>
-                <td>from 100,000</td>
-                <td>2.77</td>
-                <td>166.66</td>
-                <td>5,111.70</td>
-                <td>96,937</td>
-              </tr>
-              <tr>
-                <td>from 1,000,000</td>
-                <td>3.05</td>
-                <td>166.66</td>
-                <td>5,111.70</td>
-                <td>96,937</td>
-              </tr>
-              <tr>
-                <td>from 10,000,000</td>
-                <td>3.36</td>
-                <td>166.66</td>
-                <td>5,111.70</td>
-                <td>96,937</td>
-              </tr>
-              <tr>
-                <td>from 100,000,000</td>
-                <td>3.38</td>
-                <td>166.66</td>
-                <td>5,111.70</td>
-                <td>96,937</td>
-              </tr>
-              <tr>
-                <td>from 1,000,000,000</td>
-                <td>4.37</td>
+                <td>0.9</td>
                 <td>166.66</td>
                 <td>5,111.70</td>
                 <td>96,937</td>

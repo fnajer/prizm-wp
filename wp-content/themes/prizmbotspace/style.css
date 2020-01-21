@@ -238,6 +238,9 @@ js - поправляются пути полные для иконок пере
 .range__total-text {
 	font-family: 'MontserratMedium';
 }
+.calculator__left-container {
+	height: auto;
+}
 
 
 
