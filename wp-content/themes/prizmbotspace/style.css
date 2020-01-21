@@ -47,7 +47,7 @@ js - поправляются пути полные для иконок пере
 	}
 }
 
-
+/* old 4 tradings blocks */
 .trading  {
 	height: auto;
 }
@@ -74,7 +74,7 @@ js - поправляются пути полные для иконок пере
 	}
 }
 
-
+/* new tradings blocks */
 .trading:before {
 	left: 54%;
 	top: 69%;
@@ -110,6 +110,8 @@ js - поправляются пути полные для иконок пере
 	background-image: linear-gradient(135deg,#f0a,#9c42f5 53%,#5d2de1);
 }
 
+
+/* pixel perfect. added container for promo bg */
 .button_with-icon {
 	padding-left: 50px;
 }
@@ -228,6 +230,18 @@ js - поправляются пути полные для иконок пере
 .button_mr_none {
 	margin-right: 0 !important;
 }
+
+
+
+
+/* calculator */
+.range__total-text {
+	font-family: 'MontserratMedium';
+}
+
+
+
+
 
 /* promo width */
 html[lang='ru-RU'] .promo__container { 

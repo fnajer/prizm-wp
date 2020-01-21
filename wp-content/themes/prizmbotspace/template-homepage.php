@@ -147,9 +147,7 @@ get_header();
                   <div id="custom-handle" class="ui-slider-handle"></div>
                 </div>
               </div>
-              <div class="range__total">
-                <span id="range-balance-total" class="range__total-text">65,698</span>
-              </div>
+              <input id="range-balance-total" class="range__total range__total-text" type="text" value="100"/>
             </div>
             <div class="range">
               <div class="range__body">
@@ -161,9 +159,7 @@ get_header();
                   <div id="custom-handle" class="ui-slider-handle"></div>
                 </div>
               </div>
-              <div class="range__total">
-                <span id="range-time-total" class="range__total-text">320</span>
-              </div>
+              <input id="range-time-total" class="range__total range__total-text" type="text" value="24"/>
             </div>
           </div>
           <table data-tab="prizm" class="calculator__table">
@@ -191,7 +187,7 @@ get_header();
                 <td class="mobile-body__item-head">from 1,000</td>
                 <td class="mobile-body__item-row">
                   <span class="item-row__name">COF</span>
-                  <span class="item-row__value">1</span>
+                  <span class="item-row__value">2.18</span>
                 </td>
                 <td class="mobile-body__item-row">
                   <span class="item-row__name">Per Day</span>
@@ -210,7 +206,7 @@ get_header();
                 <td class="mobile-body__item-head">from 10,000</td>
                 <td class="mobile-body__item-row">
                   <span class="item-row__name">COF</span>
-                  <span class="item-row__value">1</span>
+                  <span class="item-row__value">2.36</span>
                 </td>
                 <td class="mobile-body__item-row">
                   <span class="item-row__name">Per Day</span>
@@ -229,7 +225,7 @@ get_header();
                 <td class="mobile-body__item-head">from 100,000</td>
                 <td class="mobile-body__item-row">
                   <span class="item-row__name">COF</span>
-                  <span class="item-row__value">1</span>
+                  <span class="item-row__value">2.77</span>
                 </td>
                 <td class="mobile-body__item-row">
                   <span class="item-row__name">Per Day</span>
@@ -248,7 +244,7 @@ get_header();
                 <td class="mobile-body__item-head">from 1,000,000</td>
                 <td class="mobile-body__item-row">
                   <span class="item-row__name">COF</span>
-                  <span class="item-row__value">1</span>
+                  <span class="item-row__value">3.05</span>
                 </td>
                 <td class="mobile-body__item-row">
                   <span class="item-row__name">Per Day</span>
@@ -267,7 +263,7 @@ get_header();
                 <td class="mobile-body__item-head">from 10,000,000</td>
                 <td class="mobile-body__item-row">
                   <span class="item-row__name">COF</span>
-                  <span class="item-row__value">1</span>
+                  <span class="item-row__value">3.36</span>
                 </td>
                 <td class="mobile-body__item-row">
                   <span class="item-row__name">Per Day</span>
@@ -286,7 +282,7 @@ get_header();
                 <td class="mobile-body__item-head">from 100,000,000</td>
                 <td class="mobile-body__item-row">
                   <span class="item-row__name">COF</span>
-                  <span class="item-row__value">1</span>
+                  <span class="item-row__value">3.38</span>
                 </td>
                 <td class="mobile-body__item-row">
                   <span class="item-row__name">Per Day</span>
@@ -305,7 +301,7 @@ get_header();
                 <td class="mobile-body__item-head">from 1,000,000,000</td>
                 <td class="mobile-body__item-row">
                   <span class="item-row__name">COF</span>
-                  <span class="item-row__value">1</span>
+                  <span class="item-row__value">4.37</span>
                 </td>
                 <td class="mobile-body__item-row">
                   <span class="item-row__name">Per Day</span>
@@ -341,49 +337,49 @@ get_header();
               </tr>
               <tr>
                 <td>from 1,000</td>
-                <td>1</td>
+                <td>2.18</td>
                 <td>166.66</td>
                 <td>5,111.70</td>
                 <td>96,937</td>
               </tr>
               <tr>
                 <td>from 10,000</td>
-                <td>1</td>
+                <td>2.36</td>
                 <td>166.66</td>
                 <td>5,111.70</td>
                 <td>96,937</td>
               </tr>
               <tr>
                 <td>from 100,000</td>
-                <td>1</td>
+                <td>2.77</td>
                 <td>166.66</td>
                 <td>5,111.70</td>
                 <td>96,937</td>
               </tr>
               <tr>
                 <td>from 1,000,000</td>
-                <td>1</td>
+                <td>3.05</td>
                 <td>166.66</td>
                 <td>5,111.70</td>
                 <td>96,937</td>
               </tr>
               <tr>
                 <td>from 10,000,000</td>
-                <td>1</td>
+                <td>3.36</td>
                 <td>166.66</td>
                 <td>5,111.70</td>
                 <td>96,937</td>
               </tr>
               <tr>
                 <td>from 100,000,000</td>
-                <td>1</td>
+                <td>3.38</td>
                 <td>166.66</td>
                 <td>5,111.70</td>
                 <td>96,937</td>
               </tr>
               <tr>
                 <td>from 1,000,000,000</td>
-                <td>1</td>
+                <td>4.37</td>
                 <td>166.66</td>
                 <td>5,111.70</td>
                 <td>96,937</td>
@@ -415,7 +411,7 @@ get_header();
                 <td class="mobile-body__item-head">from 1,000</td>
                 <td class="mobile-body__item-row">
                   <span class="item-row__name">COF</span>
-                  <span class="item-row__value">1</span>
+                  <span class="item-row__value">2.18</span>
                 </td>
                 <td class="mobile-body__item-row">
                   <span class="item-row__name">Per Day</span>
@@ -434,7 +430,7 @@ get_header();
                 <td class="mobile-body__item-head">from 10,000</td>
                 <td class="mobile-body__item-row">
                   <span class="item-row__name">COF</span>
-                  <span class="item-row__value">1</span>
+                  <span class="item-row__value">2.36</span>
                 </td>
                 <td class="mobile-body__item-row">
                   <span class="item-row__name">Per Day</span>
@@ -453,7 +449,7 @@ get_header();
                 <td class="mobile-body__item-head">from 100,000</td>
                 <td class="mobile-body__item-row">
                   <span class="item-row__name">COF</span>
-                  <span class="item-row__value">1</span>
+                  <span class="item-row__value">2.77</span>
                 </td>
                 <td class="mobile-body__item-row">
                   <span class="item-row__name">Per Day</span>
@@ -472,7 +468,7 @@ get_header();
                 <td class="mobile-body__item-head">from 1,000,000</td>
                 <td class="mobile-body__item-row">
                   <span class="item-row__name">COF</span>
-                  <span class="item-row__value">1</span>
+                  <span class="item-row__value">3.05</span>
                 </td>
                 <td class="mobile-body__item-row">
                   <span class="item-row__name">Per Day</span>
@@ -491,7 +487,7 @@ get_header();
                 <td class="mobile-body__item-head">from 10,000,000</td>
                 <td class="mobile-body__item-row">
                   <span class="item-row__name">COF</span>
-                  <span class="item-row__value">1</span>
+                  <span class="item-row__value">3.36</span>
                 </td>
                 <td class="mobile-body__item-row">
                   <span class="item-row__name">Per Day</span>
@@ -510,7 +506,7 @@ get_header();
                 <td class="mobile-body__item-head">from 100,000,000</td>
                 <td class="mobile-body__item-row">
                   <span class="item-row__name">COF</span>
-                  <span class="item-row__value">1</span>
+                  <span class="item-row__value">3.38</span>
                 </td>
                 <td class="mobile-body__item-row">
                   <span class="item-row__name">Per Day</span>
@@ -529,7 +525,7 @@ get_header();
                 <td class="mobile-body__item-head">from 1,000,000,000</td>
                 <td class="mobile-body__item-row">
                   <span class="item-row__name">COF</span>
-                  <span class="item-row__value">1</span>
+                  <span class="item-row__value">4.37</span>
                 </td>
                 <td class="mobile-body__item-row">
                   <span class="item-row__name">Per Day</span>
@@ -565,49 +561,49 @@ get_header();
               </tr>
               <tr>
                 <td>from 1,000</td>
-                <td>1</td>
+                <td>2.18</td>
                 <td>166.66</td>
                 <td>5,111.70</td>
                 <td>96,937</td>
               </tr>
               <tr>
                 <td>from 10,000</td>
-                <td>1</td>
+                <td>2.36</td>
                 <td>166.66</td>
                 <td>5,111.70</td>
                 <td>96,937</td>
               </tr>
               <tr>
                 <td>from 100,000</td>
-                <td>1</td>
+                <td>2.77</td>
                 <td>166.66</td>
                 <td>5,111.70</td>
                 <td>96,937</td>
               </tr>
               <tr>
                 <td>from 1,000,000</td>
-                <td>1</td>
+                <td>3.05</td>
                 <td>166.66</td>
                 <td>5,111.70</td>
                 <td>96,937</td>
               </tr>
               <tr>
                 <td>from 10,000,000</td>
-                <td>1</td>
+                <td>3.36</td>
                 <td>166.66</td>
                 <td>5,111.70</td>
                 <td>96,937</td>
               </tr>
               <tr>
                 <td>from 100,000,000</td>
-                <td>1</td>
+                <td>3.38</td>
                 <td>166.66</td>
                 <td>5,111.70</td>
                 <td>96,937</td>
               </tr>
               <tr>
                 <td>from 1,000,000,000</td>
-                <td>1</td>
+                <td>4.37</td>
                 <td>166.66</td>
                 <td>5,111.70</td>
                 <td>96,937</td>
