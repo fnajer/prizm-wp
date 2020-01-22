@@ -152,8 +152,8 @@ get_header();
             <div class="range">
               <div class="range__body">
                 <div class="range__body-text">
-                  <span class="range__title">Reinvestment frequency in hours:</span>
-                  <span id="range-time-body" class="range__body-total">320</span id="range-prizm-body">
+                  <span class="range__title">Custom duration in days:</span>
+                  <span id="range-time-body" class="range__body-total">320</span>
                 </div>
                 <div id="slider-time" class="slider">
                   <div id="custom-handle" class="ui-slider-handle"></div>
@@ -182,6 +182,10 @@ get_header();
                   <span class="item-row__name">Per Year</span>
                   <span class="item-row__value">96,937</span>
                 </td>
+                <td class="mobile-body__item-row">
+                  <span class="item-row__name range-time-custom">Per <span></span></span>
+                  <span class="item-row__value">96,937</span>
+                </td>
               </tr>
               <tr class="mobile-body__item">
                 <td class="mobile-body__item-head">from 1,000</td>
@@ -199,6 +203,10 @@ get_header();
                 </td>
                 <td class="mobile-body__item-row">
                   <span class="item-row__name">Per Year</span>
+                  <span class="item-row__value">96,937</span>
+                </td>
+                <td class="mobile-body__item-row">
+                  <span class="item-row__name range-time-custom">Per <span></span></span>
                   <span class="item-row__value">96,937</span>
                 </td>
               </tr>
@@ -220,6 +228,10 @@ get_header();
                   <span class="item-row__name">Per Year</span>
                   <span class="item-row__value">96,937</span>
                 </td>
+                <td class="mobile-body__item-row">
+                  <span class="item-row__name range-time-custom">Per <span></span></span>
+                  <span class="item-row__value">96,937</span>
+                </td>
               </tr>
               <tr id="calculator-show-more-1" class="calculator__mobile-btn"><td class="calculator__more-info">More info</td></tr>
             </tbody>
@@ -230,6 +242,7 @@ get_header();
                 <th>Per Day</th>
                 <th>Per Month</th>
                 <th>Per Year</th>
+                <th class="range-time-custom">Per <span></span></th>
               </tr>
             </thead>
             <tbody class="calculator__table-body">
@@ -239,6 +252,7 @@ get_header();
                 <td>166.66</td>
                 <td>5,111.70</td>
                 <td>96,937</td>
+                <td>96,937</td>
               </tr>
               <tr>
                 <td>from 1,000</td>
@@ -246,12 +260,14 @@ get_header();
                 <td>166.66</td>
                 <td>5,111.70</td>
                 <td>96,937</td>
+                <td>96,937</td>
               </tr>
               <tr>
                 <td>from 10,000</td>
                 <td>0.9</td>
                 <td>166.66</td>
                 <td>5,111.70</td>
+                <td>96,937</td>
                 <td>96,937</td>
               </tr>
             </tbody>
@@ -261,7 +277,7 @@ get_header();
               <tr class="mobile-body__item">
                 <td class="mobile-body__item-head">less than 1,000</td>
                 <td class="mobile-body__item-row">
-                  <span class="item-row__name">OOF</span>
+                  <span class="item-row__name">COF</span>
                   <span class="item-row__value">0.7</span>
                 </td>
                 <td class="mobile-body__item-row">
@@ -276,6 +292,10 @@ get_header();
                   <span class="item-row__name">Per Year</span>
                   <span class="item-row__value">96,937</span>
                 </td>
+                <td class="mobile-body__item-row">
+                  <span class="item-row__name range-time-custom">Per <span></span></span>
+                  <span class="item-row__value">96,937</span>
+                </td>
               </tr>
               <tr class="mobile-body__item">
                 <td class="mobile-body__item-head">from 1,000</td>
@@ -293,6 +313,10 @@ get_header();
                 </td>
                 <td class="mobile-body__item-row">
                   <span class="item-row__name">Per Year</span>
+                  <span class="item-row__value">96,937</span>
+                </td>
+                <td class="mobile-body__item-row">
+                  <span class="item-row__name range-time-custom">Per <span></span></span>
                   <span class="item-row__value">96,937</span>
                 </td>
               </tr>
@@ -314,16 +338,21 @@ get_header();
                   <span class="item-row__name">Per Year</span>
                   <span class="item-row__value">96,937</span>
                 </td>
+                <td class="mobile-body__item-row">
+                  <span class="item-row__name range-time-custom">Per <span></span></span>
+                  <span class="item-row__value">96,937</span>
+                </td>
               </tr>
               <tr id="calculator-show-more-2" class="calculator__mobile-btn"><td class="calculator__more-info">More info</td></tr>
             </tbody>
             <thead class="calculator__table-head">
               <tr>
-                <th>OOP</th>
+                <th>PZM</th>
                 <th>COF</th>
                 <th>Per Day</th>
                 <th>Per Month</th>
                 <th>Per Year</th>
+                <th class="range-time-custom">Per <span></span></th>
               </tr>
             </thead>
             <tbody class="calculator__table-body">
@@ -333,6 +362,7 @@ get_header();
                 <td>166.66</td>
                 <td>5,111.70</td>
                 <td>96,937</td>
+                <td>96,937</td>
               </tr>
               <tr>
                 <td>from 1,000</td>
@@ -340,12 +370,14 @@ get_header();
                 <td>166.66</td>
                 <td>5,111.70</td>
                 <td>96,937</td>
+                <td>96,937</td>
               </tr>
               <tr>
                 <td>from 10,000</td>
                 <td>0.9</td>
                 <td>166.66</td>
                 <td>5,111.70</td>
+                <td>96,937</td>
                 <td>96,937</td>
               </tr>
             </tbody>
