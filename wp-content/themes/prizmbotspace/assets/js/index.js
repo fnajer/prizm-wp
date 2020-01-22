@@ -10,8 +10,8 @@ jQuery(document).ready( function($) {
   renderPZM(prizmData);
   function renderPZM(prizmData) {
     const { 
-      pzmPerDay, pzmPerMonth, pzmPerYear,
-      percentPerDay, percentPerMonth, percentPerYear
+      pzmPerDay, pzmPerMonth, pzmPerYear, pzmPerCustom,
+      percentPerDay, percentPerMonth, percentPerYear, percentPerCustom
     } = prizmData;
     console.log(prizmData);
     for (let i = 0; i < 3; i++) {
@@ -25,6 +25,9 @@ jQuery(document).ready( function($) {
       $(`table[data-tab=prizm] .calculator__table-body tr:eq(${i}) td:eq(4),
         table[data-tab=prizm] .calculator__mobile-body tr:eq(${i}) td:eq(4) .item-row__value`)
         .text( pzmPerYear[i].toFixed(2) );
+      $(`table[data-tab=prizm] .calculator__table-body tr:eq(${i}) td:eq(5),
+        table[data-tab=prizm] .calculator__mobile-body tr:eq(${i}) td:eq(5) .item-row__value`)
+        .text( pzmPerCustom[i].toFixed(2) );
          
       $(`table[data-tab=percentage] .calculator__table-body tr:eq(${i}) td:eq(2),
         table[data-tab=percentage] .calculator__mobile-body tr:eq(${i}) td:eq(2) .item-row__value`)
@@ -35,6 +38,9 @@ jQuery(document).ready( function($) {
       $(`table[data-tab=percentage] .calculator__table-body tr:eq(${i}) td:eq(4),
         table[data-tab=percentage] .calculator__mobile-body tr:eq(${i}) td:eq(4) .item-row__value`)
         .text( percentPerYear[i].toFixed(2) );
+      $(`table[data-tab=percentage] .calculator__table-body tr:eq(${i}) td:eq(5),
+        table[data-tab=percentage] .calculator__mobile-body tr:eq(${i}) td:eq(5) .item-row__value`)
+        .text( percentPerCustom[i].toFixed(2) );
     }
   }
 
@@ -44,7 +50,7 @@ jQuery(document).ready( function($) {
     const newValue = $(this).val();
     rangeBalanceBody.text( newValue );
     $( "#slider-balance" ).slider( "value", newValue );
-  })
+  });
   	$( "#slider-balance" ).slider({
       orientation: "horizontal",
       range: "min",
@@ -68,6 +74,7 @@ jQuery(document).ready( function($) {
     
     var rangeTimeBody = $( "#range-time-body" );
     var rangeTimeTotal = $( "#range-time-total" );
+    var rangeTimeCustom = $( ".range-time-custom span" );
     rangeTimeTotal.on('change', function() {
       const newValue = $(this).val();
       rangeTimeBody.text( newValue );
@@ -76,16 +83,17 @@ jQuery(document).ready( function($) {
       $( "#slider-time" ).slider({
         orientation: "horizontal",
         range: "min",
-        min: 24,
-        max: 720,
-        step: 24,
+        min: 1,
+        max: 999,
         value: currentTimeValue,
         create: function() {
           rangeTimeBody.text( $( this ).slider( "value" ) );
+          rangeTimeCustom.text( $( this ).slider( "value" ) );
           rangeTimeTotal.val( $( this ).slider( "value" ) );
         },
         slide: function( event, ui ) {
           rangeTimeBody.text( ui.value );
+          rangeTimeCustom.text( ui.value );
           rangeTimeTotal.val( ui.value );
         },
         change: function( event, ui ) {
