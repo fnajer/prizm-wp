@@ -241,7 +241,9 @@ js - поправляются пути полные для иконок пере
 .calculator__left-container {
 	height: auto;
 }
-
+.calculator__table-head th:first-child {
+	width: 25%;
+}
 
 
 
