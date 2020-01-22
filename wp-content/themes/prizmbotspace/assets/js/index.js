@@ -161,16 +161,20 @@ console.log(/plus.svg/i.test(srcSvg));
       $(this).find(".faq__svg").attr('src', srcSvg);
     });
 
-    const AFFILIATES = [6, 2, 1, 1, 1, 1, 1, 1, 1]
-    const maxValue = Math.max(...AFFILIATES)
+    const affiliatesCollection = $('.affiliates__table .slider-affiliates-value');
+    const AFFILIATES = $.map(affiliatesCollection, function(elem) {
+      const value = parseFloat(elem.textContent);
+      return isNaN(value) ? 0 : value;
+    });
+    const maxValue = Math.max(...AFFILIATES);
     $('.slider-affiliates-value').each(function(i,elem) {
-      $(elem).text(`${AFFILIATES[i]}%`)
-      const percentage = (AFFILIATES[i] * 100 / maxValue) + '%'
+      $(elem).text(`${AFFILIATES[i]}%`);
+      const percentage = (AFFILIATES[i] * 100 / maxValue) + '%';
     
       const slider = $(elem).parent("tr").find(".slider-affiliates");
       slider.css(
         "background", `linear-gradient(90deg, #9c42f5 0%, #9c42f5 ${percentage}, rgba(224, 224, 255, 0.06) ${percentage})`
-      )
+      );
     });
 
     const burgerBtn = document.querySelector('.burger-btn');
