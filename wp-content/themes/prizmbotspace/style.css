@@ -163,6 +163,25 @@ js - поправляются пути полные для иконок пере
 	.footer__made {
 		display: initial;
 	}
+
+	/*tradings fix new blocks on mobile */
+	.trading:before {
+		left: 80%;
+		top: 53%;
+	}
+	.trading .rating_panic {
+		margin-top: 0;
+	}
+	.rating_market .trading__block:after {
+		content: none;
+	}
+	.rating_hills .trading__block:after {
+		content: none;
+	}
+}
+
+.join .text-purple:before {
+	content: none !important;
 }
 
 @media screen and (min-width: 1200px) {
@@ -208,6 +227,10 @@ js - поправляются пути полные для иконок пере
 	.step:after {
 		left: 8px;
 	}
+
+	.affiliates__right-container .text {
+		margin-bottom: 0;
+	}
 }
 @media screen and (min-width: 768px) {
 	.promo-bg {
@@ -221,6 +244,12 @@ js - поправляются пути полные для иконок пере
 	.mobile__item {
 		max-width: 350px;
 	}
+
+	.affiliates__left-container {
+    height: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+	}
 }
 
 .step__text .text-purple {
@@ -232,7 +261,50 @@ js - поправляются пути полные для иконок пере
 }
 
 
+/* if has more text(eg. rus)- cliped with max-height */
+.projects {
+	max-height: initial;
+}
+.steps {
+	height: auto;
+}
+/* rus words very long */
+.step__title {
+	word-break: break-all;
+}
+/* LINE in rus break to 2 rows */
+.affiliates__table td:first-child {
+	width: 16%;
+}
+/* */
+.affiliates {
+	padding-top: 72px;
+}
 
+.affiliates__table td {
+	padding: 24px 0;
+}
+.affiliates__table tr:first-child td {
+	padding-top: 0;
+}
+.affiliates__table tr:last-child td {
+	padding-bottom: 0;
+}
+
+/**/
+.affiliates__table td:first-child {
+	width: 14%;
+}
+.affiliates__table td:nth-child(2) {
+	width: 9%;
+}
+.affiliates__table td:last-child {
+	width: 63%;
+}
+/* menu rus */
+.menu a {
+	text-align: center;
+}
 
 /* calculator */
 .range__total-text {
@@ -245,6 +317,12 @@ js - поправляются пути полные для иконок пере
 	width: 25%;
 }
 
+@media screen and (max-width: 480px) {
+	.trading .heading,
+	.join .heading {
+		word-break: break-word;
+	}
+}
 
 
 
