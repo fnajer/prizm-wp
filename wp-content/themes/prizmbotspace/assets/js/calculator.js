@@ -1,17 +1,21 @@
 const MINIMAL_REINVEST = 1;
 const PERIOD_PROFIT = 1; // 24 hours
-const COUNT_PERIODS = 365; // 365 дней
+const COUNT_PERIODS_PER_YEAR = 365; // 365 дней
 
 // control points
 const DAY_CONTROL_POINT = 0;
 const MONTH_CONTROL_POINT = 29;
 const YEAR_CONTROL_POINT = 364;
+let customControlPoint = 0;
+
 let pzmPerDay = null;
 let pzmPerMonth = null;
 let pzmPerYear = null;
+let pzmPerCustom = null;
 let percentPerDay = null;
 let percentPerMonth = null;
 let percentPerYear = null;
+let percentPerCustom = null;
 
 // must be changing from admin panel. possible through data attributes
 // from php file to js.
@@ -26,19 +30,27 @@ let currentBalanceValue = 100,
     profitsList = [0, 0, 0],
     currentPeriod;
 
-function reinvestTimeIsCome(timeReinvestInDays, currentTime) { return timeReinvestInDays - currentTime === 0; }
 function canBeReinvest(value) { return value >= MINIMAL_REINVEST; }
 function makeReinvest(balance, profit) { return balance + profit; }
 
+function getTotalCountPeriods(customCountPeriods) {
+  return customCountPeriods > COUNT_PERIODS_PER_YEAR
+        ? customCountPeriods
+        : COUNT_PERIODS_PER_YEAR; 
+}
+function saveCustomControlPoint(periods) { customControlPoint = periods - 1; }
+function clearCustomControlPoint() { customControlPoint = 0; }
 function isControlPoint(period) {
   return period === DAY_CONTROL_POINT || 
         period === MONTH_CONTROL_POINT ||
-        period === YEAR_CONTROL_POINT;
+        period === YEAR_CONTROL_POINT ||
+        period === customControlPoint;
 }
 function saveControlPoint(period, srcBalance, balanceValuesList, profitsList) {
-  if (period === DAY_CONTROL_POINT) return pzmPerDay = calculatePzmPerRange(balanceValuesList, profitsList, srcBalance);
-  if (period === MONTH_CONTROL_POINT) return pzmPerMonth = calculatePzmPerRange(balanceValuesList, profitsList, srcBalance);
-  if (period === YEAR_CONTROL_POINT) return pzmPerYear = calculatePzmPerRange(balanceValuesList, profitsList, srcBalance);
+  if (period === DAY_CONTROL_POINT) pzmPerDay = calculatePzmPerRange(balanceValuesList, profitsList, srcBalance);
+  if (period === MONTH_CONTROL_POINT) pzmPerMonth = calculatePzmPerRange(balanceValuesList, profitsList, srcBalance);
+  if (period === YEAR_CONTROL_POINT) pzmPerYear = calculatePzmPerRange(balanceValuesList, profitsList, srcBalance);
+  if (period === customControlPoint) pzmPerCustom = calculatePzmPerRange(balanceValuesList, profitsList, srcBalance);
 }
 function calculatePzmPerRange(balanceValuesList, profitsList, srcBalance) {
   const pzmPerRangeList = [];
@@ -58,15 +70,15 @@ function calculateCurrentProfit(balanceValuesList, pastProfitList) {
   }
   return profitList;
 }
-function calculatePrizm(srcBalanceValue, timeValueInHrs) {
-  const timeReinvestInDays = timeValueInHrs / 24;
-  let currentTime = 0;
-
+function calculatePrizm(srcBalanceValue, customCountPeriods) {
   let balanceValuesList = [srcBalanceValue, srcBalanceValue, srcBalanceValue];
+
+  saveCustomControlPoint(customCountPeriods);
+  const totalPeriods = getTotalCountPeriods(customCountPeriods);
 
   for (
     currentPeriod = 0; 
-    currentPeriod < COUNT_PERIODS; 
+    currentPeriod < totalPeriods; 
     currentPeriod += PERIOD_PROFIT
   ) { // 0 period - that is already after first 24 hours
     profitsList = calculateCurrentProfit(balanceValuesList, profitsList);
@@ -74,32 +86,28 @@ function calculatePrizm(srcBalanceValue, timeValueInHrs) {
     if (isControlPoint(currentPeriod))
       saveControlPoint(currentPeriod, srcBalanceValue, balanceValuesList, profitsList);
 
-    currentTime += PERIOD_PROFIT;
-
-    if (reinvestTimeIsCome(timeReinvestInDays, currentTime)) {
-      for (let i = 0; i < profitsList.length; i++) {
-        if (canBeReinvest(profitsList[i])) {
-          balanceValuesList[i] = makeReinvest(balanceValuesList[i], profitsList[i]);
-          profitsList[i] = 0;
-        }
+    for (let i = 0; i < profitsList.length; i++) {
+      if (canBeReinvest(profitsList[i])) {
+        balanceValuesList[i] = makeReinvest(balanceValuesList[i], profitsList[i]);
+        profitsList[i] = 0;
       }
-      currentTime = 0;
     }
   }
   profitsList = [0, 0, 0];
+  clearCustomControlPoint();
   // logPzm();
 
   calculatePercentage(srcBalanceValue);
-  // console.log(percentPerDay,
-  //   percentPerMonth,
-  //   percentPerYear)
+  
   return {
     pzmPerDay,
     pzmPerMonth,
     pzmPerYear,
+    pzmPerCustom,
     percentPerDay,
     percentPerMonth,
     percentPerYear,
+    percentPerCustom,
   }
 }
 
@@ -115,6 +123,7 @@ function calculatePercentage(srcBalanceValue) {
   percentPerDay = calculatePercentagePerRange(pzmPerDay, srcBalanceValue);
   percentPerMonth = calculatePercentagePerRange(pzmPerMonth, srcBalanceValue);
   percentPerYear = calculatePercentagePerRange(pzmPerYear, srcBalanceValue);
+  percentPerCustom = calculatePercentagePerRange(pzmPerCustom, srcBalanceValue);
 }
 
 // console.log(`${currentPeriod}: currentProfit: ${currentProfit}, 
