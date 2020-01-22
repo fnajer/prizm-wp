@@ -33,15 +33,15 @@ get_header();
           <div class="project project_prizmbot">
             <div class="project__container">
               <img class="project__img" src="<?php echo get_template_directory_uri(); ?>/assets/img/prizmbot.png" width="128" height="128" alt="Logo of prizmbot.space site" />
-              <span class="project__note">ALREADY WORKING</span>
-              <span class="project__name">PrizmBot.Space</span>
+              <span class="project__note"><?php pll_e('first_project_note'); ?></span>
+              <span class="project__name"><?php pll_e('first_project_name'); ?></span>
             </div>
           </div>
           <div class="project project_minter">
             <div class="project__container">
               <img class="project__img" src="<?php echo get_template_directory_uri(); ?>/assets/img/minter.png" width="128" height="128" alt="Logo of minter site" />
-              <span class="project__note">COMING SOON</span>
-              <span class="project__name">Minter</span>
+              <span class="project__note"><?php pll_e('second_project_note'); ?></span>
+              <span class="project__name"><?php pll_e('second_project_name'); ?></span>
             </div>
           </div>
           <div class="project project_coin">
@@ -49,8 +49,8 @@ get_header();
               <div class="project__img project__img_circle">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/coin-name.png" width="46" height="66" alt="Logo of coin name site" />
               </div>
-              <span class="project__note">CHOOSE NEXT</span>
-              <span class="project__name">Coin Name</span>
+              <span class="project__note"><?php pll_e('third_project_note'); ?></span>
+              <span class="project__name"><?php pll_e('third_project_name'); ?></span>
             </div>
           </div>
         </div>
@@ -133,14 +133,14 @@ get_header();
       <section class="calculator container container_indent">
         <div class="calculator__left-container">
           <div class="calculator__tabs">
-            <button data-tab="prizm" class="tab tab_active">Prizm Income</button>
-            <button data-tab="percentage" class="tab">Percentage Income</button>
+            <button data-tab="prizm" class="tab tab_active"><?php pll_e('calculator_tab_1'); ?></button>
+            <button data-tab="percentage" class="tab"><?php pll_e('calculator_tab_2'); ?></button>
           </div>
           <div class="calculator__ranges">
             <div class="range">
               <div class="range__body">
                 <div class="range__body-text">
-                  <span class="range__title">Wallet balance PRIZM</span>
+                  <span class="range__title"><?php pll_e('calculator_range_1'); ?></span>
                   <span id="range-balance-body" class="range__body-total">65,698</span>
                 </div>
                 <div id="slider-balance" class="slider">
@@ -152,7 +152,7 @@ get_header();
             <div class="range">
               <div class="range__body">
                 <div class="range__body-text">
-                  <span class="range__title">Custom duration in days:</span>
+                  <span class="range__title"><?php pll_e('calculator_range_2'); ?></span>
                   <span id="range-time-body" class="range__body-total">320</span>
                 </div>
                 <div id="slider-time" class="slider">
@@ -165,89 +165,89 @@ get_header();
           <table data-tab="prizm" class="calculator__table">
             <tbody class="calculator__mobile-body">
               <tr class="mobile-body__item">
-                <td class="mobile-body__item-head">less than 1,000</td>
+                <td class="mobile-body__item-head"><?php pll_e('calculator_title_1'); ?></td>
                 <td class="mobile-body__item-row">
-                  <span class="item-row__name">COF</span>
+                  <span class="item-row__name"><?php pll_e('calculator_coeficient'); ?></span>
                   <span class="item-row__value">0.7</span>
                 </td>
                 <td class="mobile-body__item-row">
-                  <span class="item-row__name">Per Day</span>
+                  <span class="item-row__name"><?php pll_e('calculator_day'); ?></span>
                   <span class="item-row__value">166.66</span>
                 </td>
                 <td class="mobile-body__item-row">
-                  <span class="item-row__name">Per Month</span>
+                  <span class="item-row__name"><?php pll_e('calculator_month'); ?></span>
                   <span class="item-row__value">5,111.70</span>
                 </td>
                 <td class="mobile-body__item-row">
-                  <span class="item-row__name">Per Year</span>
+                  <span class="item-row__name"><?php pll_e('calculator_year'); ?></span>
                   <span class="item-row__value">96,937</span>
                 </td>
                 <td class="mobile-body__item-row">
-                  <span class="item-row__name range-time-custom">Per <span></span></span>
+                  <span class="item-row__name range-time-custom"><?php pll_e('calculator_custom'); ?> <span></span></span>
                   <span class="item-row__value">96,937</span>
                 </td>
               </tr>
               <tr class="mobile-body__item">
-                <td class="mobile-body__item-head">from 1,000</td>
+                <td class="mobile-body__item-head"><?php pll_e('calculator_title_2'); ?></td>
                 <td class="mobile-body__item-row">
-                  <span class="item-row__name">COF</span>
+                  <span class="item-row__name"><?php pll_e('calculator_coeficient'); ?></span>
                   <span class="item-row__value">0.8</span>
                 </td>
                 <td class="mobile-body__item-row">
-                  <span class="item-row__name">Per Day</span>
+                  <span class="item-row__name"><?php pll_e('calculator_day'); ?></span>
                   <span class="item-row__value">166.66</span>
                 </td>
                 <td class="mobile-body__item-row">
-                  <span class="item-row__name">Per Month</span>
+                  <span class="item-row__name"><?php pll_e('calculator_month'); ?></span>
                   <span class="item-row__value">5,111.70</span>
                 </td>
                 <td class="mobile-body__item-row">
-                  <span class="item-row__name">Per Year</span>
+                  <span class="item-row__name"><?php pll_e('calculator_year'); ?></span>
                   <span class="item-row__value">96,937</span>
                 </td>
                 <td class="mobile-body__item-row">
-                  <span class="item-row__name range-time-custom">Per <span></span></span>
+                  <span class="item-row__name range-time-custom"><?php pll_e('calculator_custom'); ?> <span></span></span>
                   <span class="item-row__value">96,937</span>
                 </td>
               </tr>
               <tr class="mobile-body__item">
-                <td class="mobile-body__item-head">from 10,000</td>
+                <td class="mobile-body__item-head"><?php pll_e('calculator_title_3'); ?></td>
                 <td class="mobile-body__item-row">
-                  <span class="item-row__name">COF</span>
+                  <span class="item-row__name"><?php pll_e('calculator_coeficient'); ?></span>
                   <span class="item-row__value">0.9</span>
                 </td>
                 <td class="mobile-body__item-row">
-                  <span class="item-row__name">Per Day</span>
+                  <span class="item-row__name"><?php pll_e('calculator_day'); ?></span>
                   <span class="item-row__value">166.66</span>
                 </td>
                 <td class="mobile-body__item-row">
-                  <span class="item-row__name">Per Month</span>
+                  <span class="item-row__name"><?php pll_e('calculator_month'); ?></span>
                   <span class="item-row__value">5,111.70</span>
                 </td>
                 <td class="mobile-body__item-row">
-                  <span class="item-row__name">Per Year</span>
+                  <span class="item-row__name"><?php pll_e('calculator_year'); ?></span>
                   <span class="item-row__value">96,937</span>
                 </td>
                 <td class="mobile-body__item-row">
-                  <span class="item-row__name range-time-custom">Per <span></span></span>
+                  <span class="item-row__name range-time-custom"><?php pll_e('calculator_custom'); ?> <span></span></span>
                   <span class="item-row__value">96,937</span>
                 </td>
               </tr>
-              <tr id="calculator-show-more-1" class="calculator__mobile-btn"><td class="calculator__more-info">More info</td></tr>
+              <tr id="calculator-show-more-1" class="calculator__mobile-btn"><td class="calculator__more-info"><?php pll_e('calculator_mobile_button'); ?></td></tr>
             </tbody>
             <thead class="calculator__table-head">
               <tr>
                 <th>PZM</th>
-                <th>COF</th>
-                <th>Per Day</th>
-                <th>Per Month</th>
-                <th>Per Year</th>
-                <th class="range-time-custom">Per <span></span></th>
+                <th><?php pll_e('calculator_coeficient'); ?></th>
+                <th><?php pll_e('calculator_day'); ?></th>
+                <th><?php pll_e('calculator_month'); ?></th>
+                <th><?php pll_e('calculator_year'); ?></th>
+                <th class="range-time-custom"><?php pll_e('calculator_custom'); ?> <span></span></th>
               </tr>
             </thead>
             <tbody class="calculator__table-body">
               <tr>
-                <td>less than 1,000</td>
+                <td><?php pll_e('calculator_title_1'); ?></td>
                 <td>0.7</td>
                 <td>166.66</td>
                 <td>5,111.70</td>
@@ -255,7 +255,7 @@ get_header();
                 <td>96,937</td>
               </tr>
               <tr>
-                <td>from 1,000</td>
+                <td><?php pll_e('calculator_title_2'); ?></td>
                 <td>0.8</td>
                 <td>166.66</td>
                 <td>5,111.70</td>
@@ -263,7 +263,7 @@ get_header();
                 <td>96,937</td>
               </tr>
               <tr>
-                <td>from 10,000</td>
+                <td><?php pll_e('calculator_title_3'); ?></td>
                 <td>0.9</td>
                 <td>166.66</td>
                 <td>5,111.70</td>
@@ -275,89 +275,89 @@ get_header();
           <table data-tab="percentage" class="hide calculator__table">
             <tbody class="calculator__mobile-body">
               <tr class="mobile-body__item">
-                <td class="mobile-body__item-head">less than 1,000</td>
+                <td class="mobile-body__item-head"><?php pll_e('calculator_title_1'); ?></td>
                 <td class="mobile-body__item-row">
-                  <span class="item-row__name">COF</span>
+                  <span class="item-row__name"><?php pll_e('calculator_coeficient'); ?></span>
                   <span class="item-row__value">0.7</span>
                 </td>
                 <td class="mobile-body__item-row">
-                  <span class="item-row__name">Per Day</span>
+                  <span class="item-row__name"><?php pll_e('calculator_day'); ?></span>
                   <span class="item-row__value">166.66</span>
                 </td>
                 <td class="mobile-body__item-row">
-                  <span class="item-row__name">Per Month</span>
+                  <span class="item-row__name"><?php pll_e('calculator_month'); ?></span>
                   <span class="item-row__value">5,111.70</span>
                 </td>
                 <td class="mobile-body__item-row">
-                  <span class="item-row__name">Per Year</span>
+                  <span class="item-row__name"><?php pll_e('calculator_year'); ?></span>
                   <span class="item-row__value">96,937</span>
                 </td>
                 <td class="mobile-body__item-row">
-                  <span class="item-row__name range-time-custom">Per <span></span></span>
+                  <span class="item-row__name range-time-custom"><?php pll_e('calculator_custom'); ?> <span></span></span>
                   <span class="item-row__value">96,937</span>
                 </td>
               </tr>
               <tr class="mobile-body__item">
-                <td class="mobile-body__item-head">from 1,000</td>
+                <td class="mobile-body__item-head"><?php pll_e('calculator_title_2'); ?></td>
                 <td class="mobile-body__item-row">
-                  <span class="item-row__name">COF</span>
+                  <span class="item-row__name"><?php pll_e('calculator_coeficient'); ?></span>
                   <span class="item-row__value">0.8</span>
                 </td>
                 <td class="mobile-body__item-row">
-                  <span class="item-row__name">Per Day</span>
+                  <span class="item-row__name"><?php pll_e('calculator_day'); ?></span>
                   <span class="item-row__value">166.66</span>
                 </td>
                 <td class="mobile-body__item-row">
-                  <span class="item-row__name">Per Month</span>
+                  <span class="item-row__name"><?php pll_e('calculator_month'); ?></span>
                   <span class="item-row__value">5,111.70</span>
                 </td>
                 <td class="mobile-body__item-row">
-                  <span class="item-row__name">Per Year</span>
+                  <span class="item-row__name"><?php pll_e('calculator_year'); ?></span>
                   <span class="item-row__value">96,937</span>
                 </td>
                 <td class="mobile-body__item-row">
-                  <span class="item-row__name range-time-custom">Per <span></span></span>
+                  <span class="item-row__name range-time-custom"><?php pll_e('calculator_custom'); ?> <span></span></span>
                   <span class="item-row__value">96,937</span>
                 </td>
               </tr>
               <tr class="mobile-body__item">
-                <td class="mobile-body__item-head">from 10,000</td>
+                <td class="mobile-body__item-head"><?php pll_e('calculator_title_3'); ?></td>
                 <td class="mobile-body__item-row">
-                  <span class="item-row__name">COF</span>
+                  <span class="item-row__name"><?php pll_e('calculator_coeficient'); ?></span>
                   <span class="item-row__value">0.9</span>
                 </td>
                 <td class="mobile-body__item-row">
-                  <span class="item-row__name">Per Day</span>
+                  <span class="item-row__name"><?php pll_e('calculator_day'); ?></span>
                   <span class="item-row__value">166.66</span>
                 </td>
                 <td class="mobile-body__item-row">
-                  <span class="item-row__name">Per Month</span>
+                  <span class="item-row__name"><?php pll_e('calculator_month'); ?></span>
                   <span class="item-row__value">5,111.70</span>
                 </td>
                 <td class="mobile-body__item-row">
-                  <span class="item-row__name">Per Year</span>
+                  <span class="item-row__name"><?php pll_e('calculator_year'); ?></span>
                   <span class="item-row__value">96,937</span>
                 </td>
                 <td class="mobile-body__item-row">
-                  <span class="item-row__name range-time-custom">Per <span></span></span>
+                  <span class="item-row__name range-time-custom"><?php pll_e('calculator_custom'); ?> <span></span></span>
                   <span class="item-row__value">96,937</span>
                 </td>
               </tr>
-              <tr id="calculator-show-more-2" class="calculator__mobile-btn"><td class="calculator__more-info">More info</td></tr>
+              <tr id="calculator-show-more-2" class="calculator__mobile-btn"><td class="calculator__more-info"><?php pll_e('calculator_mobile_button'); ?></td></tr>
             </tbody>
             <thead class="calculator__table-head">
               <tr>
                 <th>PZM</th>
-                <th>COF</th>
-                <th>Per Day</th>
-                <th>Per Month</th>
-                <th>Per Year</th>
-                <th class="range-time-custom">Per <span></span></th>
+                <th><?php pll_e('calculator_coeficient'); ?></th>
+                <th><?php pll_e('calculator_day'); ?></th>
+                <th><?php pll_e('calculator_month'); ?></th>
+                <th><?php pll_e('calculator_year'); ?></th>
+                <th class="range-time-custom"><?php pll_e('calculator_custom'); ?> <span></span></th>
               </tr>
             </thead>
             <tbody class="calculator__table-body">
               <tr>
-                <td>less than 1,000</td>
+                <td><?php pll_e('calculator_title_1'); ?></td>
                 <td>0.7</td>
                 <td>166.66</td>
                 <td>5,111.70</td>
@@ -365,7 +365,7 @@ get_header();
                 <td>96,937</td>
               </tr>
               <tr>
-                <td>from 1,000</td>
+                <td><?php pll_e('calculator_title_2'); ?></td>
                 <td>0.8</td>
                 <td>166.66</td>
                 <td>5,111.70</td>
@@ -373,7 +373,7 @@ get_header();
                 <td>96,937</td>
               </tr>
               <tr>
-                <td>from 10,000</td>
+                <td><?php pll_e('calculator_title_3'); ?></td>
                 <td>0.9</td>
                 <td>166.66</td>
                 <td>5,111.70</td>
@@ -403,7 +403,7 @@ get_header();
         <div class="steps__left-container">
           <h3 class="subtitle"><?php pll_e('steps_subtitle'); ?></h3>
           <h2 class="heading"><?php pll_e('steps_title'); ?></h2>
-          <iframe width="445" height="250" src="https://www.youtube.com/embed/o-avwgbeD_8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe width="445" height="250" src="<?php pll_e('steps_video_url'); ?>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div class="steps__right-container">
           <div class="steps__blocks">
@@ -412,7 +412,7 @@ get_header();
               <h4 class="step__title"><?php pll_e('steps_title_1'); ?></h4>
               <p class="step__text hide-content"><?php format_paragraph(pll__('steps_paragraph_1')); ?></p>
               <button id="show-more-1" class="step__btn">
-                <span id="show" class="step__more">more</span>
+                <span id="show" class="step__more"><?php pll_e('steps_button_more'); ?></span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6"> -->
                   <g fill="none" fill-rule="evenodd">
                       <path d="M15 13H-5V-7h20z" opacity=".87"/>
@@ -426,7 +426,7 @@ get_header();
               <h4 class="step__title"><?php pll_e('steps_title_2'); ?></h4>
               <p class="step__text hide-content"><?php format_paragraph(pll__('steps_paragraph_2')); ?></p>
               <button id="show-more-2" class="step__btn">
-                <span id="show" class="step__more">more</span>
+                <span id="show" class="step__more"><?php pll_e('steps_button_more'); ?></span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6"> -->
                   <g fill="none" fill-rule="evenodd">
                       <path d="M15 13H-5V-7h20z" opacity=".87"/>
@@ -440,7 +440,7 @@ get_header();
               <h4 class="step__title"><?php pll_e('steps_title_3'); ?></h4>
               <p class="step__text hide-content"><?php format_paragraph(pll__('steps_paragraph_3')); ?></p>
               <button id="show-more-3" class="step__btn">
-                <span id="show" class="step__more">more</span>
+                <span id="show" class="step__more"><?php pll_e('steps_button_more'); ?></span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6"> -->
                   <g fill="none" fill-rule="evenodd">
                       <path d="M15 13H-5V-7h20z" opacity=".87"/>
@@ -459,64 +459,64 @@ get_header();
           <table class="affiliates__table">
             <tbody>
               <tr>
-                <td>LINE 1</td>
-                <td class="slider-affiliates-value">-</td>
+                <td><?php pll_e('affiliates_table_row_name'); ?> 1</td>
+                <td class="slider-affiliates-value"><?php pll_e('affiliates_table_row_1'); ?></td>
                 <td>
                   <div class="slider-affiliates"></div>
                 </td>
               </tr>
               <tr>
-                <td>LINE 2</td>
-                <td class="slider-affiliates-value">-</td>
+                <td><?php pll_e('affiliates_table_row_name'); ?> 2</td>
+                <td class="slider-affiliates-value"><?php pll_e('affiliates_table_row_2'); ?></td>
                 <td>
                   <div class="slider-affiliates"></div>
                 </td>
               </tr>
               <tr>
-                <td>LINE 3</td>
-                <td class="slider-affiliates-value">-</td>
+                <td><?php pll_e('affiliates_table_row_name'); ?> 3</td>
+                <td class="slider-affiliates-value"><?php pll_e('affiliates_table_row_3'); ?></td>
                 <td>
                   <div class="slider-affiliates"></div>
                 </td>
               </tr>
               <tr>
-                <td>LINE 4</td>
-                <td class="slider-affiliates-value">-</td>
+                <td><?php pll_e('affiliates_table_row_name'); ?> 4</td>
+                <td class="slider-affiliates-value"><?php pll_e('affiliates_table_row_4'); ?></td>
                 <td>
                   <div class="slider-affiliates"></div>
                 </td>
               </tr>
               <tr>
-                <td>LINE 5</td>
-                <td class="slider-affiliates-value">-</td>
+                <td><?php pll_e('affiliates_table_row_name'); ?> 5</td>
+                <td class="slider-affiliates-value"><?php pll_e('affiliates_table_row_5'); ?></td>
                 <td>
                   <div class="slider-affiliates"></div>
                 </td>
               </tr>
               <tr>
-                <td>LINE 6</td>
-                <td class="slider-affiliates-value">-</td>
+                <td><?php pll_e('affiliates_table_row_name'); ?> 6</td>
+                <td class="slider-affiliates-value"><?php pll_e('affiliates_table_row_6'); ?></td>
                 <td>
                   <div class="slider-affiliates"></div>
                 </td>
               </tr>
               <tr>
-                <td>LINE 7</td>
-                <td class="slider-affiliates-value">-</td>
+                <td><?php pll_e('affiliates_table_row_name'); ?> 7</td>
+                <td class="slider-affiliates-value"><?php pll_e('affiliates_table_row_7'); ?></td>
                 <td>
                   <div class="slider-affiliates"></div>
                 </td>
               </tr>
               <tr>
-                <td>LINE 8</td>
-                <td class="slider-affiliates-value">-</td>
+                <td><?php pll_e('affiliates_table_row_name'); ?> 8</td>
+                <td class="slider-affiliates-value"><?php pll_e('affiliates_table_row_8'); ?></td>
                 <td>
                   <div class="slider-affiliates"></div>
                 </td>
               </tr>
               <tr>
-                <td>LINE 9</td>
-                <td class="slider-affiliates-value">-</td>
+                <td><?php pll_e('affiliates_table_row_name'); ?> 9</td>
+                <td class="slider-affiliates-value"><?php pll_e('affiliates_table_row_9'); ?></td>
                 <td>
                   <div class="slider-affiliates"></div>
                 </td>
@@ -542,9 +542,9 @@ get_header();
               <div class="trading__img trading__img_circle">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/bit-team.png" width="62" height="69" alt="Logo of coin name site" />
               </div>
-              <span class="trading__note">TRADING PLATFORM</span>
-              <span class="trading__name">bit.team</span>
-              <button class="button button_theme_purple button_mr_none">Buy PRIZM</button>
+              <span class="trading__note"><?php pll_e('first_trading_note'); ?></span>
+              <span class="trading__name"><?php pll_e('first_trading_name'); ?></span>
+              <button class="button button_theme_purple button_mr_none"><?php pll_e('trading_buy_button'); ?></button>
             </div>
           </div>
           <div class="rating rating_hills">
@@ -552,9 +552,9 @@ get_header();
               <div class="trading__img trading__img_circle">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hotbit.png" width="62" height="69" alt="Logo of coin name site" />
               </div>
-              <span class="trading__note">TRADING PLATFORM</span>
-              <span class="trading__name">hotbit.io</span>
-              <button class="button button_theme_purple button_mr_none">Buy PRIZM</button>
+              <span class="trading__note"><?php pll_e('second_trading_note'); ?></span>
+              <span class="trading__name"><?php pll_e('second_trading_name'); ?></span>
+              <button class="button button_theme_purple button_mr_none"><?php pll_e('trading_buy_button'); ?></button>
             </div>
           </div>
           <div class="rating rating_gecko">
@@ -562,9 +562,9 @@ get_header();
               <div class="trading__img trading__img_circle">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/livecoin.png" width="62" height="69" alt="Logo of coin name site" />
               </div>
-              <span class="trading__note">TRADING PLATFORM</span>
-              <span class="trading__name">livecoin.net</span>
-              <button class="button button_theme_purple button_mr_none">Buy PRIZM</button>
+              <span class="trading__note"><?php pll_e('third_trading_note'); ?></span>
+              <span class="trading__name"><?php pll_e('third_trading_name'); ?></span>
+              <button class="button button_theme_purple button_mr_none"><?php pll_e('trading_buy_button'); ?></button>
             </div>
           </div>
           <div class="rating rating_panic">
@@ -572,9 +572,9 @@ get_header();
               <div class="trading__img trading__img_circle">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/btc-alpha.png" width="94" height="54" alt="Logo of coin name site" />
               </div>
-              <span class="trading__note">CRYPTO EXCHANGE</span>
-              <span class="trading__name">btc-alpha.com</span>
-              <button class="button button_theme_purple button_mr_none">Buy PRIZM</button>
+              <span class="trading__note"><?php pll_e('fourth_trading_note'); ?></span>
+              <span class="trading__name"><?php pll_e('fourth_trading_name'); ?></span>
+              <button class="button button_theme_purple button_mr_none"><?php pll_e('trading_buy_button'); ?></button>
             </div>
           </div>
         </div>
@@ -585,32 +585,32 @@ get_header();
           <div class="rating rating_market">
             <div class="rating__container">
               <img class="rating__img" src="<?php echo get_template_directory_uri(); ?>/assets/img/market.png" width="96" height="96" alt="Logo of prizmbot.space site" />
-              <span class="rating__note">PPC MARKETS TRACKING</span>
-              <span class="rating__name">coinmarketcap.com</span>
+              <span class="rating__note"><?php pll_e('first_rating_note'); ?></span>
+              <span class="rating__name"><?php pll_e('first_rating_name'); ?></span>
               <span class="rating__cost">$0.422308</span>
             </div>
           </div>
           <div class="rating rating_hills">
             <div class="rating__container">
               <img class="rating__img" src="<?php echo get_template_directory_uri(); ?>/assets/img/hills.png" width="96" height="96" alt="Logo of minter site" />
-              <span class="rating__note">NETWORK ASSISTANT</span>
-              <span class="rating__name">coinhills.com</span>
+              <span class="rating__note"><?php pll_e('second_rating_note'); ?></span>
+              <span class="rating__name"><?php pll_e('second_rating_name'); ?></span>
               <span class="rating__cost">$0.42974932</span>
             </div>
           </div>
           <div class="rating rating_gecko">
             <div class="rating__container">
               <img class="rating__img" src="<?php echo get_template_directory_uri(); ?>/assets/img/gecko.png" width="96" height="96" alt="Logo of minter site" />
-              <span class="rating__note">CRYPTOCURRENCY VALUE</span>
-              <span class="rating__name">coingecko.com</span>
+              <span class="rating__note"><?php pll_e('third_rating_note'); ?></span>
+              <span class="rating__name"><?php pll_e('third_rating_name'); ?></span>
               <span class="rating__cost">$0.425709</span>
             </div>
           </div>
           <div class="rating rating_panic">
             <div class="rating__container">
               <img class="rating__img" src="<?php echo get_template_directory_uri(); ?>/assets/img/panic.png" width="96" height="96" alt="Logo of minter site" />
-              <span class="rating__note">RATES DATA</span>
-              <span class="rating__name">cryptopanic.com</span>
+              <span class="rating__note"><?php pll_e('fourth_rating_note'); ?></span>
+              <span class="rating__name"><?php pll_e('fourth_rating_name'); ?></span>
               <span class="rating__cost">$0.426286</span>
             </div>
           </div>
@@ -674,7 +674,7 @@ get_header();
         <div class="container">
           <div class="join__container">
             <h3 class="subtitle"><?php pll_e('join_subtitle'); ?></h3>
-            <h2 class="heading"><?php pll_e('join_title'); ?> <span class="text-purple"></span></h2>
+            <h2 class="heading"><?php format_paragraph(pll__('join_title')); ?></h2>
             <button class="button button_theme_purple button_with-icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
                 <g fill="none" fill-rule="evenodd">

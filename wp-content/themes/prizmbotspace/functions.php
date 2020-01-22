@@ -203,6 +203,12 @@ if (function_exists('pll_register_string')) {
 	pll_register_string('Projects Subtitle', 'projects_subtitle', 'Projects');
 	pll_register_string('Projects Title', 'projects_title', 'Projects');
 	pll_register_string('Projects Paragraph', 'projects_paragraph', 'Projects', true);
+	pll_register_string('First Project Note', 'first_project_note', 'Projects');
+	pll_register_string('First Projects Name', 'first_project_name', 'Projects');
+	pll_register_string('Second Project Note', 'second_project_note', 'Projects');
+	pll_register_string('Second Projects Name', 'second_project_name', 'Projects');
+	pll_register_string('Third Project Note', 'third_project_note', 'Projects');
+	pll_register_string('Third Projects Name', 'third_project_name', 'Projects');
 	
 	pll_register_string('Mobile Subtitle', 'mobile_subtitle', 'Mobile');
 	pll_register_string('Mobile Title', 'mobile_title', 'Mobile');
@@ -210,26 +216,68 @@ if (function_exists('pll_register_string')) {
 	pll_register_string('Calculator Subtitle', 'calculator_subtitle', 'Calculator');
 	pll_register_string('Calculator Title', 'calculator_title', 'Calculator');
 	pll_register_string('Calculator Paragraph', 'calculator_paragraph', 'Calculator', true);
+	pll_register_string('Calculator Tab 1', 'calculator_tab_1', 'Calculator');
+	pll_register_string('Calculator Tab 2', 'calculator_tab_2', 'Calculator');
+	pll_register_string('Calculator Range 1', 'calculator_range_1', 'Calculator');
+	pll_register_string('Calculator Range 2', 'calculator_range_2', 'Calculator');
+	pll_register_string('Calculator Row Title 1', 'calculator_title_1', 'Calculator');
+	pll_register_string('Calculator Row Title 2', 'calculator_title_2', 'Calculator');
+	pll_register_string('Calculator Row Title 3', 'calculator_title_3', 'Calculator');
+	pll_register_string('Calculator Coeficient Column', 'calculator_coeficient', 'Calculator');
+	pll_register_string('Calculator Column Day', 'calculator_day', 'Calculator');
+	pll_register_string('Calculator Column Month', 'calculator_month', 'Calculator');
+	pll_register_string('Calculator Column Year', 'calculator_year', 'Calculator');
+	pll_register_string('Calculator Column Custom', 'calculator_custom', 'Calculator');
+	pll_register_string('Calculator Mobile Button', 'calculator_mobile_button', 'Calculator');
 	
 	pll_register_string('Steps Subtitle', 'steps_subtitle', 'Steps');
 	pll_register_string('Steps Title', 'steps_title', 'Steps');
+	pll_register_string('Steps Video URL', 'steps_video_url', 'Steps');
 	pll_register_string('Steps Block Title 1', 'steps_title_1', 'Steps', true);
 	pll_register_string('Steps Block Title 2', 'steps_title_2', 'Steps', true);
 	pll_register_string('Steps Block Title 3', 'steps_title_3', 'Steps', true);
 	pll_register_string('Steps Block Paragraph 1', 'steps_paragraph_1', 'Steps', true);
 	pll_register_string('Steps Block Paragraph 2', 'steps_paragraph_2', 'Steps', true);
 	pll_register_string('Steps Block Paragraph 3', 'steps_paragraph_3', 'Steps', true);
+	pll_register_string('Steps Button More', 'steps_button_more', 'Steps');
 	
 	pll_register_string('Affiliates Subtitle', 'affiliates_subtitle', 'Affiliates');
 	pll_register_string('Affiliates Title', 'affiliates_title', 'Affiliates');
 	pll_register_string('Affiliates Paragraph', 'affiliates_paragraph', 'Affiliates');
+	pll_register_string('Affiliates Table Row Name', 'affiliates_table_row_name', 'Affiliates');
+	pll_register_string('Affiliates Table Row 1', 'affiliates_table_row_1', 'Affiliates');
+	pll_register_string('Affiliates Table Row 2', 'affiliates_table_row_2', 'Affiliates');
+	pll_register_string('Affiliates Table Row 3', 'affiliates_table_row_3', 'Affiliates');
+	pll_register_string('Affiliates Table Row 4', 'affiliates_table_row_4', 'Affiliates');
+	pll_register_string('Affiliates Table Row 5', 'affiliates_table_row_5', 'Affiliates');
+	pll_register_string('Affiliates Table Row 6', 'affiliates_table_row_6', 'Affiliates');
+	pll_register_string('Affiliates Table Row 7', 'affiliates_table_row_7', 'Affiliates');
+	pll_register_string('Affiliates Table Row 8', 'affiliates_table_row_8', 'Affiliates');
+	pll_register_string('Affiliates Table Row 9', 'affiliates_table_row_9', 'Affiliates');
 	
 	pll_register_string('Trading Subtitle', 'trading_subtitle', 'Trading');
 	pll_register_string('Trading Title', 'trading_title', 'Trading');
+	pll_register_string('Trading Buy Button', 'trading_buy_button', 'Trading');
+	pll_register_string('First Trading Note', 'first_trading_note', 'Trading');
+	pll_register_string('First Trading Name', 'first_trading_name', 'Trading');
+	pll_register_string('Second Trading Note', 'second_trading_note', 'Trading');
+	pll_register_string('Second Trading Name', 'second_trading_name', 'Trading');
+	pll_register_string('Third Trading Note', 'third_trading_note', 'Trading');
+	pll_register_string('Third Trading Name', 'third_trading_name', 'Trading');
+	pll_register_string('Fourth Trading Note', 'fourth_trading_note', 'Trading');
+	pll_register_string('Fourth Trading Name', 'fourth_trading_name', 'Trading');
 	
 	pll_register_string('Ratings Subtitle', 'ratings_subtitle', 'Ratings');
 	pll_register_string('Ratings Title', 'ratings_title', 'Ratings');
 	pll_register_string('Ratings Paragraph', 'ratings_paragraph', 'Ratings');
+	pll_register_string('First Rating Note', 'first_rating_note', 'Ratings');
+	pll_register_string('First Rating Name', 'first_rating_name', 'Ratings');
+	pll_register_string('Second Rating Note', 'second_rating_note', 'Ratings');
+	pll_register_string('Second Rating Name', 'second_rating_name', 'Ratings');
+	pll_register_string('Third Rating Note', 'third_rating_note', 'Ratings');
+	pll_register_string('Third Rating Name', 'third_rating_name', 'Ratings');
+	pll_register_string('Fourth Rating Note', 'fourth_rating_note', 'Ratings');
+	pll_register_string('Fourth Rating Name', 'fourth_rating_name', 'Ratings');
 	
 	pll_register_string('News Subtitle', 'news_subtitle', 'News');
 	pll_register_string('News Title', 'news_title', 'News');
