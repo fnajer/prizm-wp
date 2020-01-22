@@ -78,6 +78,7 @@ jQuery(document).ready( function($) {
     rangeTimeTotal.on('change', function() {
       const newValue = $(this).val();
       rangeTimeBody.text( newValue );
+      rangeTimeCustom.text( newValue );
       $( "#slider-time" ).slider( "value", newValue );
     })
       $( "#slider-time" ).slider({
