@@ -111,8 +111,8 @@
 		?>
       <div class="footer-bottom">
         <span>
-          &copy;PrizmSpaceBot 2019, 
-          All rights reserved.
+          &copy;<?php pll_e('footer_site_name'); ?>, 
+          <?php pll_e('footer_copyright'); ?>
         </span>
 				<?php
 				wp_nav_menu( array(
@@ -128,7 +128,7 @@
           <li>Sales & Refunds</li>
           <li>Legal</li>
         </ul>-->
-        <span>made by <span class="footer__made">roobinium</span></span>
+        <span><?php pll_e('footer_made'); ?> <span class="footer__made">roobinium</span></span>
       </div>
     </footer>
   </div> <!-- end main wrapper -->
