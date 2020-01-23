@@ -77,7 +77,7 @@
 							?>
               <div class="language-view__left-col">
                 <img class='language__img' src='<?php echo $currentLang[flag]; ?>' alt='<?php echo $currentLang[name]; ?>'/>
-                Language
+                <?php pll_e('language_mobile'); ?>
               </div>
               <div class="language-view__current">
                 <span class="language__name"><?php echo strtoupper($currentLang['slug']); ?></span>
@@ -89,7 +89,7 @@
                 </svg>
               </div>
             </div>
-            <button class="button button_theme_purple button_mr_none">Get in Touch</button>
+            <button class="button button_theme_purple button_mr_none"><?php pll_e('get_in_touch'); ?></button>
           </div>
           <div class="mobile-header__language">
             <div class="language__head">
@@ -100,9 +100,9 @@
                       <path fill="#9c42f5" fill-rule="nonzero" d="M6.71 2.12L2.83 6l3.88 3.88a.996.996 0 1 1-1.41 1.41L.71 6.7a.996.996 0 0 1 0-1.41L5.3.7a.996.996 0 0 1 1.41 0c.38.39.39 1.03 0 1.42z"/>
                   </g>
                </svg>
-               Menu
+               <?php pll_e('menu_mobile'); ?>
               </div>
-              <span>Language</span>
+              <span><?php pll_e('language_mobile'); ?></span>
             </div>
 						<?php
 							echo "<ul class='language__list dropdownList'>" .
