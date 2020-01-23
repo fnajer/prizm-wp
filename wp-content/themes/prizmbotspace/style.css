@@ -210,6 +210,9 @@ js - поправляются пути полные для иконок пере
 		max-width: 560px;
     width: 100%;
 	}
+	.menu_extra a {
+		padding: 20px 10px;
+	}
 
 	.steps__blocks {
 		margin-top: 83px;
@@ -321,6 +324,9 @@ js - поправляются пути полные для иконок пере
 	.trading .heading,
 	.join .heading {
 		word-break: break-word;
+	}
+	.article__video, iframe {
+		height: 200px;
 	}
 }
 
