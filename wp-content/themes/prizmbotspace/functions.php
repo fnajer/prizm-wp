@@ -195,6 +195,8 @@ add_shortcode( 'misha', 'true_misha_func' );
 if (function_exists('pll_register_string')) { 
 	pll_register_string('Get in Touch button', 'get_in_touch', 'Shared');
 	pll_register_string('Try Now button', 'try_now', 'Shared');
+	pll_register_string('Menu text on mobile menu', 'menu_mobile', 'Shared');
+	pll_register_string('Language on mobile menu', 'language_mobile', 'Shared');
 	
 	pll_register_string('Promo Title', 'promo_title', 'Promo');
 	pll_register_string('Promo Paragraph', 'promo_paragraph', 'Promo', true);
@@ -284,17 +286,66 @@ if (function_exists('pll_register_string')) {
 	
 	pll_register_string('Join Subtitle', 'join_subtitle', 'Join');
 	pll_register_string('Join Title', 'join_title', 'Join');
-}
 
-function format_paragraph( $text ){
-	$pos =  preg_match('/\[@\](.*?)\[@\]/', $text);
+	pll_register_string('Main Title', 'prizm_1_main_title', 'Prizm Page');
+	pll_register_string('Main Paragraph', 'prizm_1_main_paragraph', 'Prizm Page', true);
+	pll_register_string('Main Video URL', 'prizm_1_video_url', 'Prizm Page');
+
+	pll_register_string('Content 1 Title', 'prizm_c_1_title', 'Prizm Page');
+	pll_register_string('Content 1 Subtitle 1', 'prizm_c_1_subtitle_1', 'Prizm Page');
+	pll_register_string('Content 1 Paragraph 1', 'prizm_c_1_paragraph_1', 'Prizm Page', true);
+	pll_register_string('Content 1 Paragraph 2', 'prizm_c_1_paragraph_2', 'Prizm Page', true);
+	pll_register_string('Content 1 Image Caption', 'prizm_c_1_img_caption', 'Prizm Page');
+	pll_register_string('Content 1 Subtitle 2', 'prizm_c_1_subtitle_2', 'Prizm Page');
+	pll_register_string('Content 1 List Item 1', 'prizm_c_1_list_item_1', 'Prizm Page', true);
+	pll_register_string('Content 1 List Item 2', 'prizm_c_1_list_item_2', 'Prizm Page', true);
+	pll_register_string('Content 1 List Item 3', 'prizm_c_1_list_item_3', 'Prizm Page', true);
+
+	pll_register_string('Content 1 Note Title', 'prizm_c_1_note_title', 'Prizm Page');
+	pll_register_string('Content 1 Note Paragraph', 'prizm_c_1_note_paragraph', 'Prizm Page', true);
+
+	pll_register_string('Content 2 Title', 'prizm_c_2_title', 'Prizm Page');
+	pll_register_string('Content 2 Subtitle 1', 'prizm_c_2_subtitle_1', 'Prizm Page');
+	pll_register_string('Content 2 Paragraph 1', 'prizm_c_2_paragraph_1', 'Prizm Page', true);
+	pll_register_string('Content 2 Paragraph 2', 'prizm_c_2_paragraph_2', 'Prizm Page', true);
+	pll_register_string('Content 2 Paragraph 3', 'prizm_c_2_paragraph_3', 'Prizm Page', true);
+	pll_register_string('Content 2 Note Title', 'prizm_c_2_note_title', 'Prizm Page');
+	pll_register_string('Content 2 Note Paragraph 1', 'prizm_c_2_note_paragraph_1', 'Prizm Page', true);
+	pll_register_string('Content 2 Note Paragraph 2', 'prizm_c_2_note_paragraph_2', 'Prizm Page', true);
+	pll_register_string('Content 2 Note Paragraph 3', 'prizm_c_2_note_paragraph_3', 'Prizm Page', true);
+	pll_register_string('Content 2 Note Paragraph 4', 'prizm_c_2_note_paragraph_4', 'Prizm Page', true);
+	pll_register_string('Content 2 Note Button More', 'prizm_c_2_note_button_more', 'Prizm Page');
+
+	pll_register_string('Content 3 Title', 'prizm_c_3_title', 'Prizm Page');
+	pll_register_string('Content 3 Block 1 Title', 'prizm_c_3_block_1_title', 'Prizm Page');
+	pll_register_string('Content 3 Block 1 Paragraph', 'prizm_c_3_block_1_paragraph', 'Prizm Page', true);
+	pll_register_string('Content 3 Block 1 URL', 'prizm_c_3_block_1_url', 'Prizm Page');
+	pll_register_string('Content 3 Block 2 Title', 'prizm_c_3_block_2_title', 'Prizm Page');
+	pll_register_string('Content 3 Block 2 Paragraph', 'prizm_c_3_block_2_paragraph', 'Prizm Page', true);
+	pll_register_string('Content 3 Block 2 URL', 'prizm_c_3_block_2_url', 'Prizm Page');
+	pll_register_string('Content 3 Block 3 Title', 'prizm_c_3_block_3_title', 'Prizm Page');
+	pll_register_string('Content 3 Block 3 Paragraph', 'prizm_c_3_block_3_paragraph', 'Prizm Page', true);
+	pll_register_string('Content 3 Block 3 URL', 'prizm_c_3_block_3_url', 'Prizm Page');
+
+	pll_register_string('Breadcrumbs On Home', 'breadcrumbs_home', 'Breadcrumbs');
+	pll_register_string('Breadcrumbs Social Share', 'breadcrumbs_share', 'Breadcrumbs');
+
+	pll_register_string('Footer Copyright', 'footer_copyright', 'Footer');
+	pll_register_string('Footer Site Name', 'footer_site_name', 'Footer');
+	pll_register_string('Footer Made', 'footer_made', 'Footer');
+}
 	
-	if ($pos !== false) {
-		preg_match_all('/\[@\](.*?)\[@\]/', $text, $result_text);
-		echo preg_replace('/\[@\](.*?)\[@\]/', "<span class='text-purple'>@RewardSpaceBot</span>", $text);
-	} else {
-		echo $text;
-	}
+function format_paragraph( $text ){
+	$result = preg_replace('/\[@\](.*?)\[@\]/', "<span class='text-purple'>$1</span>", $text);
+	$result = preg_replace('/\[B\](.*?)\[B\]/', "<b>$1</b>", $result);
+	echo $result;
+	// $pos = preg_match('/\[@\](.*?)\[@\]/', $text);
+	
+	// if ($pos !== false) {
+	// 	echo preg_replace('/\[@\](.*?)\[@\]/', "<span class='text-purple'>$1</span>", $text);
+	// } else {
+	// 	echo $text;
+	// }
 }
 
 /**
