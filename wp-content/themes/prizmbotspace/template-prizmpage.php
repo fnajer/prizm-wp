@@ -22,93 +22,93 @@ get_header();
      
       <section class="article small-container">
         <div class="article__container">
-          <h1 class="heading">New Generation Mining up to 27% per Month</h1>
-          <p class="text">Make money on paramining n the <span class="text-purple">@PRIZMSPACEBOT</span> community</p>
-          <iframe class="article__video" width="730" height="410" src="https://www.youtube.com/embed/o-avwgbeD_8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <h1 class="heading"><?php pll_e('prizm_1_main_title'); ?></h1>
+          <p class="text"><?php format_paragraph(pll__('prizm_1_main_paragraph')); ?></p>
+          <iframe class="article__video" width="730" height="410" src="<?php pll_e('prizm_1_video_url'); ?>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-          <h2 class="heading-2">Is that an old fashioned word?</h2>
-          <h3 class="heading-3">Do they keep you in a cell?</h3>
-          <p class="sub-text">A merry little surge of <b>electricity piped</b> by automatic alarm from the mood organ beside his bed awakened Rick Deckard. Surprised — it always surprised him to find himself awake without prior notice — he <b>rose from the bed</b>, stood up in his multicolored pajamas, and stretched. Now, in her bed, his wife Iran opened her gray, unmerry eyes, blinked, then groaned and shut her eyes again.</p>
-          <p class="sub-text">After a hurried breakfast — he had lost time due to the discussion with his wife — he ascended clad for venturing out, including his Ajax model Mountibank Lead Codpiece, to the covered roof pasture whereon his electric sheep "grazed." Whereon it, sophisticated piece of hardware that it was, chomped away in simulated contentment, bamboozling the other tenants of the building.</p>
+          <h2 class="heading-2"><?php pll_e('prizm_c_1_title'); ?></h2>
+          <h3 class="heading-3"><?php pll_e('prizm_c_1_subtitle_1'); ?></h3>
+          <p class="sub-text"><?php format_paragraph(pll__('prizm_c_1_paragraph_1')); ?></p>
+          <p class="sub-text"><?php pll_e('prizm_c_1_paragraph_2'); ?></p>
           
           <figure class="article__figure">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/article.jpg" alt="Logo of minter site" />
-            <figcaption>Caption Placeholder</figcaption>
+            <figcaption><?php pll_e('prizm_c_1_img_caption'); ?></figcaption>
           </figure>
 
-          <h3 class="heading-3">Do they keep you in a cell?</h3>
+          <h3 class="heading-3"><?php pll_e('prizm_c_1_subtitle_2'); ?></h3>
           <ol class="article__list">
-            <li><p class="sub-text">Without his parents’ consent they — <span class="text-purple">the killers</span> — had bombarded the unique nodule which had formed in <span class="text-purple">his brain</span>, had attacked it with radioactive cobalt.</p></li>
-            <li><p class="sub-text">It had been a pit of corpses and dead bones and he had struggled for years to get up from it. The donkey and especially the toad, the creatures most important to him, had vanished, had become extinct; only rotting fragments, an eyeless head here.</p></li>
-            <li><p class="sub-text">The donkey and especially the toad, the creatures most important to him, had vanished, had become extinct; only rotting fragments.</p></li>
+            <li><p class="sub-text"><?php format_paragraph(pll__('prizm_c_1_list_item_1')); ?></p></li>
+            <li><p class="sub-text"><?php pll_e('prizm_c_1_list_item_2'); ?></p></li>
+            <li><p class="sub-text"><?php pll_e('prizm_c_1_list_item_3'); ?></p></li>
           </ol>
           
           <div class="system">
-            <h4 class="system__heading">System</h4>
-            <p class="system__text">Without his parents’ consent they — the killers — had bombarded the unique nodule which had formed in his brain, had attacked it with radioactive cobalt.</p>
+            <h4 class="system__heading"><?php pll_e('prizm_c_1_note_title'); ?></h4>
+            <p class="system__text"><?php pll_e('prizm_c_1_note_paragraph'); ?></p>
           </div>
 
-          <h2 class="heading-2">A blood black nothingness</h2>
-          <h3 class="heading-3">What was your most shameful moment?</h3>
+          <h2 class="heading-2"><?php pll_e('prizm_c_2_title'); ?></h2>
+          <h3 class="heading-3"><?php pll_e('prizm_c_2_subtitle_1'); ?></h3>
           <ul class="article__list article__list_ul">
-            <li><p class="sub-text">Without his parents’ consent they — the killers — had bombarded the unique nodule which had formed in his brain, had attacked it with radioactive cobalt.</p></li>
-            <li><p class="sub-text">It had been a pit of corpses and dead bones and he had struggled for years to get up from it. The donkey and especially the toad, the creatures most important to him, had vanished, had become extinct; only rotting fragments, an eyeless head here.</p></li>
-            <li><p class="sub-text">The donkey and especially the toad, the creatures most important to him, had vanished, had become extinct; only rotting fragments.</p></li>
+            <li><p class="sub-text"><?php pll_e('prizm_c_2_paragraph_1'); ?></p></li>
+            <li><p class="sub-text"><?php pll_e('prizm_c_2_paragraph_2'); ?></p></li>
+            <li><p class="sub-text"><?php pll_e('prizm_c_2_paragraph_3'); ?></p></li>
           </ul>
 
           <div class="system">
-            <h4 class="system__heading">Summary</h4>
+            <h4 class="system__heading"><?php pll_e('prizm_c_2_note_title'); ?></h4>
             <ul class="system__list">
               <li>
-                <p class="system__text"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/checkbox.svg" alt="Logo of minter site" />To own your crypto assets, you need to manage your own private keys.</p>
+                <p class="system__text"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/checkbox.svg" alt="Logo of minter site" /><?php pll_e('prizm_c_2_note_paragraph_1'); ?></p>
               </li>
               <li>
-                <p class="system__text"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/checkbox.svg" alt="Logo of minter site" />Ledger hardware wallets make private key management easy and secure.</p>
+                <p class="system__text"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/checkbox.svg" alt="Logo of minter site" /><?php pll_e('prizm_c_2_note_paragraph_2'); ?></p>
               </li>
               <li>
-                <p class="system__text"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/checkbox.svg" alt="Logo of minter site" />Each unique 24-word recovery phrase creates a new set of private keys.</p>
+                <p class="system__text"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/checkbox.svg" alt="Logo of minter site" /><?php pll_e('prizm_c_2_note_paragraph_3'); ?></p>
               </li>
               <li>
-                <p class="system__text"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/checkbox.svg" alt="Logo of minter site" />Make sure you secure your 24-word recovery phrase properly. <a class="system__link" href="#">Learn more</a></p>
+                <p class="system__text"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/checkbox.svg" alt="Logo of minter site" /><?php pll_e('prizm_c_2_note_paragraph_4'); ?> <a class="system__link" href="#"><?php pll_e('prizm_c_2_note_button_more'); ?></a></p>
               </li>
             </ul>
           </div>
 
-          <h3 class="heading-2">FAQ</h2>
+          <h3 class="heading-2"><?php pll_e('prizm_c_3_title'); ?></h2>
             <div class="faq__block">
               <div class="faq__head">
-                <h4 class="faq__heading">About @PRIZMSPACEBOT (General Info)</h4>
+                <h4 class="faq__heading"><?php format_paragraph(pll__('prizm_c_3_block_1_title')); ?></h4>
                 <div class="faq__btn">
                   <img src="<?php echo get_template_directory_uri(); ?>/assets/img/plus.svg" class="faq__svg" alt="open faq"/>
                 </div>
               </div>
               <div class="faq__body faq_hide-content">
-                <p class="faq__text">This is easy to do on the BIT.TEAM exchange (100 PRIZM - this is only about 2000 rubles). You buy directly from the seller, therefore the price will be the most favorable.</p>
-                <iframe width="682" height="383" src="https://www.youtube.com/embed/o-avwgbeD_8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p class="faq__text"><?php pll_e('prizm_c_3_block_1_paragraph'); ?></p>
+                <iframe width="682" height="383" src="<?php pll_e('prizm_c_3_block_1_url'); ?>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
             </div>
             <div class="faq__block">
               <div class="faq__head">
-                <h4 class="faq__heading">About @PRIZMSPACEBOT (General Info)</h4>
+                <h4 class="faq__heading"><?php format_paragraph(pll__('prizm_c_3_block_2_title')); ?></h4>
                 <div class="faq__btn">
                   <img src="<?php echo get_template_directory_uri(); ?>/assets/img/plus.svg" class="faq__svg" alt="open faq"/>
                 </div>
               </div>
               <div class="faq__body faq_hide-content">
-                <p class="faq__text">This is easy to do on the BIT.TEAM exchange (100 PRIZM - this is only about 2000 rubles). You buy directly from the seller, therefore the price will be the most favorable.</p>
-                <iframe width="682" height="383" src="https://www.youtube.com/embed/o-avwgbeD_8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p class="faq__text"><?php pll_e('prizm_c_3_block_2_paragraph'); ?></p>
+                <iframe width="682" height="383" src="<?php pll_e('prizm_c_3_block_2_url'); ?>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
             </div>
             <div class="faq__block">
               <div class="faq__head">
-                <h4 class="faq__heading">About @PRIZMSPACEBOT (General Info)</h4>
+                <h4 class="faq__heading"><?php format_paragraph(pll__('prizm_c_3_block_3_title')); ?></h4>
                 <div class="faq__btn">
                   <img src="<?php echo get_template_directory_uri(); ?>/assets/img/plus.svg" class="faq__svg" alt="open faq"/>
                 </div>
               </div>
               <div class="faq__body faq_hide-content">
-                <p class="faq__text">This is easy to do on the BIT.TEAM exchange (100 PRIZM - this is only about 2000 rubles). You buy directly from the seller, therefore the price will be the most favorable.</p>
-                <iframe width="682" height="383" src="https://www.youtube.com/embed/o-avwgbeD_8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p class="faq__text"><?php pll_e('prizm_c_3_block_3_paragraph'); ?></p>
+                <iframe width="682" height="383" src="<?php pll_e('prizm_c_3_block_3_url'); ?>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
             </div>
             
@@ -120,10 +120,10 @@ get_header();
                     <path fill="#E0E0FF" fill-rule="nonzero" d="M6.71 2.12L2.83 6l3.88 3.88a.996.996 0 1 1-1.41 1.41L.71 6.7a.996.996 0 0 1 0-1.41L5.3.7a.996.996 0 0 1 1.41 0c.38.39.39 1.03 0 1.42z"/>
                   </g>
                </svg>
-                <span class="breadcrumbs__crumb">На главную</span>
+                <span class="breadcrumbs__crumb"><?php pll_e('breadcrumbs_home'); ?></span>
               </div>
               <div class="article__footer-social">
-                <span class="breadcrumbs__crumb">Поделиться</span>
+                <span class="breadcrumbs__crumb"><?php pll_e('breadcrumbs_share'); ?></span>
                 <ul class="social social_article">
                   <li>
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
