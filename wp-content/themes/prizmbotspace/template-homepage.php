@@ -580,6 +580,41 @@ get_header();
         </div>
       </section>
 
+      <?php 
+        function fetchData($url, $options = null) {
+          $response = wp_remote_get($url, $options);
+          $json = wp_remote_retrieve_body( $response );
+          return json_decode($json);
+        }
+        function formatData($data) {
+          return $data 
+            ? '$' . number_format($data, 6) 
+            : 'Not Available';
+        }
+
+        $body = fetchData('https://api.coinhills.com/v1/cspa/pzm/usd');
+        $coinhillsRating = formatData($body->data->{'CSPA:PZM/USD'}->cspa);
+
+        $body = fetchData('https://api.coingecko.com/api/v3/simple/price?ids=prizm&vs_currencies=usd');
+        $coingeckoRating = formatData($body->{'prizm'}->usd);
+
+        $body = fetchData('https://pro-api.coinmarketcap.com/v1/cryptocurrency/quotes/latest?id=1681',
+          array(
+            'headers' => array( 'X-CMC_PRO_API_KEY' => '0d78a369-3001-426a-9f69-81b2e627c92c' )
+          ));
+        $coinmarketRating = formatData($body->data->{'1681'}->quote->USD->price);
+        // $response = wp_remote_get( 'https://pro-api.coinmarketcap.com/v1/cryptocurrency/quotes/latest?id=1681',
+        //   array(
+        //     'headers' => array( 'X-CMC_PRO_API_KEY' => '0d78a369-3001-426a-9f69-81b2e627c92c' )
+        //   ));
+        // $json = wp_remote_retrieve_body( $response );
+        // $body = json_decode($json);
+        // $temp = number_format($body->data->{'1681'}->quote->USD->price, 6);
+        // if ($temp)
+        //   $coinmarketRating = '$' . $temp;
+        // else $coinmarketRating = 'Not Available';
+      ?>
+
       <section class="ratings container container_indent">
         <div class="ratings__left-container">
           <div class="rating rating_market">
@@ -587,7 +622,7 @@ get_header();
               <img class="rating__img" src="<?php echo get_template_directory_uri(); ?>/assets/img/market.png" width="96" height="96" alt="Logo of prizmbot.space site" />
               <span class="rating__note"><?php pll_e('first_rating_note'); ?></span>
               <span class="rating__name"><?php pll_e('first_rating_name'); ?></span>
-              <span id="market_price" class="rating__cost">$0.422308</span>
+              <span id="market_price" class="rating__cost"><?php echo $coinmarketRating ?></span>
             </div>
           </div>
           <div class="rating rating_hills">
@@ -595,7 +630,7 @@ get_header();
               <img class="rating__img" src="<?php echo get_template_directory_uri(); ?>/assets/img/hills.png" width="96" height="96" alt="Logo of minter site" />
               <span class="rating__note"><?php pll_e('second_rating_note'); ?></span>
               <span class="rating__name"><?php pll_e('second_rating_name'); ?></span>
-              <span id="hills_price" class="rating__cost">$0.42974932</span>
+              <span id="hills_price" class="rating__cost"><?php echo $coinhillsRating ?></span>
             </div>
           </div>
           <div class="rating rating_gecko">
@@ -603,7 +638,7 @@ get_header();
               <img class="rating__img" src="<?php echo get_template_directory_uri(); ?>/assets/img/gecko.png" width="96" height="96" alt="Logo of minter site" />
               <span class="rating__note"><?php pll_e('third_rating_note'); ?></span>
               <span class="rating__name"><?php pll_e('third_rating_name'); ?></span>
-              <span id="gecko_price" class="rating__cost">$0.425709</span>
+              <span id="gecko_price" class="rating__cost"><?php echo $coingeckoRating ?></span>
             </div>
           </div>
           <div class="rating rating_panic">
@@ -611,7 +646,7 @@ get_header();
               <img class="rating__img" src="<?php echo get_template_directory_uri(); ?>/assets/img/panic.png" width="96" height="96" alt="Logo of minter site" />
               <span class="rating__note"><?php pll_e('fourth_rating_note'); ?></span>
               <span class="rating__name"><?php pll_e('fourth_rating_name'); ?></span>
-              <span id="panic_price" class="rating__cost">$0.426286</span>
+              <span id="panic_price" class="rating__cost"><?php echo $coinmarketRating ?></span>
             </div>
           </div>
         </div>
