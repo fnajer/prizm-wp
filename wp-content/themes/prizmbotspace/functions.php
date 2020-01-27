@@ -127,6 +127,7 @@ function prizmbotspace_scripts() {
 	wp_enqueue_script('jquery');
 	wp_enqueue_script( 'jquery-ui', 'https://code.jquery.com/ui/1.12.1/jquery-ui.js', array(), null, true );
 	wp_enqueue_script( 'prizmbotspace-calculator', get_template_directory_uri() . '/assets/js/calculator.js', array('jquery', 'jquery-ui'), '20200121', true );
+	wp_enqueue_script( 'prizmbotspace-requests', get_template_directory_uri() . '/assets/js/requests.js', array('jquery'), '20200127', true );
 	wp_enqueue_script( 'prizmbotspace-index', get_template_directory_uri() . '/assets/js/index.js', array('jquery', 'jquery-ui', 'prizmbotspace-calculator'), '20200111', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
