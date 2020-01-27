@@ -587,7 +587,7 @@ get_header();
               <img class="rating__img" src="<?php echo get_template_directory_uri(); ?>/assets/img/market.png" width="96" height="96" alt="Logo of prizmbot.space site" />
               <span class="rating__note"><?php pll_e('first_rating_note'); ?></span>
               <span class="rating__name"><?php pll_e('first_rating_name'); ?></span>
-              <span class="rating__cost">$0.422308</span>
+              <span id="market_price" class="rating__cost">$0.422308</span>
             </div>
           </div>
           <div class="rating rating_hills">
@@ -595,7 +595,7 @@ get_header();
               <img class="rating__img" src="<?php echo get_template_directory_uri(); ?>/assets/img/hills.png" width="96" height="96" alt="Logo of minter site" />
               <span class="rating__note"><?php pll_e('second_rating_note'); ?></span>
               <span class="rating__name"><?php pll_e('second_rating_name'); ?></span>
-              <span class="rating__cost">$0.42974932</span>
+              <span id="hills_price" class="rating__cost">$0.42974932</span>
             </div>
           </div>
           <div class="rating rating_gecko">
@@ -603,7 +603,7 @@ get_header();
               <img class="rating__img" src="<?php echo get_template_directory_uri(); ?>/assets/img/gecko.png" width="96" height="96" alt="Logo of minter site" />
               <span class="rating__note"><?php pll_e('third_rating_note'); ?></span>
               <span class="rating__name"><?php pll_e('third_rating_name'); ?></span>
-              <span class="rating__cost">$0.425709</span>
+              <span id="gecko_price" class="rating__cost">$0.425709</span>
             </div>
           </div>
           <div class="rating rating_panic">
@@ -611,7 +611,7 @@ get_header();
               <img class="rating__img" src="<?php echo get_template_directory_uri(); ?>/assets/img/panic.png" width="96" height="96" alt="Logo of minter site" />
               <span class="rating__note"><?php pll_e('fourth_rating_note'); ?></span>
               <span class="rating__name"><?php pll_e('fourth_rating_name'); ?></span>
-              <span class="rating__cost">$0.426286</span>
+              <span id="panic_price" class="rating__cost">$0.426286</span>
             </div>
           </div>
         </div>
