@@ -331,6 +331,11 @@ js - поправляются пути полные для иконок пере
 }
 
 
+/* header mobile styles for 2 languages instead 3 */
+.language .mobile-header__language {
+	height: 172px;
+}
+
 
 /* promo width */
 html[lang='ru-RU'] .promo__container { 
