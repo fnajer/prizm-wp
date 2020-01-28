@@ -673,7 +673,7 @@ get_header();
 		
 		<?php
 		$args = array(
-            'posts_per_page'   => 10,
+            'posts_per_page'   => 3,
             'offset'           => 0,
             'category'         => '',
             'category_name'    => '',
