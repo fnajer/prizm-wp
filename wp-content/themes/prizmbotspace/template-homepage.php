@@ -7,7 +7,7 @@ get_header();
 ?>
 <!-- only content wrapper -->
     <main class="content-wrapper">
-
+    
       <div class="promo-bg">
         <section class="promo container container_indent">
           <div class="promo__container">
@@ -671,8 +671,8 @@ get_header();
         <h2 class="heading"><?php pll_e('news_title'); ?></h2>
         <div class="news__list">
 		
-		<?php
-		$args = array(
+        <?php
+          $args = array(
             'posts_per_page'   => 3,
             'offset'           => 0,
             'category'         => '',
@@ -690,18 +690,27 @@ get_header();
             'author_name'      => '',
             'post_status'      => 'publish',
             'suppress_filters' => true 
-        );
-        query_posts($args);
-		if ( have_posts() ) :
-			
-			while ( have_posts() ) :
-				the_post();
-				
-				get_template_part( 'template-parts/content', 'posts' );
-			endwhile;
-			
-		endif;
-		?>
+          );
+          query_posts($args);
+          $news_ids = [];
+          if ( have_posts() ) :
+            
+            while ( have_posts() ) :
+              the_post();
+              
+              get_template_part( 'template-parts/content', 'posts' );
+            endwhile;
+          endif;
+          ?>
+        </div>
+        <div class="news__chooser">
+          <img id="back" src="<?php echo get_template_directory_uri(); ?>/assets/img/back.svg" width="24" height="24" />
+          <div class="news__chooser-item-list">
+            <div data-news-id="<?php echo $news_ids[0] ?>" class="news__chooser-item news__chooser-item_active"></div>
+            <div data-news-id="<?php echo $news_ids[1] ?>" class="news__chooser-item"></div>
+            <div data-news-id="<?php echo $news_ids[2] ?>" class="news__chooser-item"></div>
+          </div>
+          <img id="next" src="<?php echo get_template_directory_uri(); ?>/assets/img/next.svg" width="24" height="24" />
         </div>
       </section>
 

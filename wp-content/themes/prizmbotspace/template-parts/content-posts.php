@@ -9,6 +9,7 @@
 
 ?>
 <?php if ( 'post' === get_post_type() ) : ?>
+<?php global $news_ids; array_push($news_ids, "post-".get_the_ID()); ?>
 <div id="post-<?php the_ID(); ?>" <?php post_class('news__item'); ?>>
 	<img class="news__item-img" src="<?php the_post_thumbnail_url() ?>" width="350" height="176" alt="Logo of minter site" />
 	<div class="news__item-body">
