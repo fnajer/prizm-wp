@@ -161,6 +161,43 @@ console.log(/plus.svg/i.test(srcSvg));
       $(this).find(".faq__svg").attr('src', srcSvg);
     });
 
+    const chooserItemsCollection = $('.news__chooser-item');
+    const CHOOSER_ITEMS = $.map(chooserItemsCollection, function(elem) {
+      return {
+        elem,
+        newsId: elem.dataset.newsId,
+      };
+    });
+    let currentItem = 0;
+    const LAST_ITEM = CHOOSER_ITEMS.length - 1;
+    var backBtn = $("#back");
+    var nextBtn = $("#next");
+
+    backBtn.on('click', function() {
+      CHOOSER_ITEMS[currentItem].elem.classList.remove('news__chooser-item_active');
+      
+      currentItem = currentItem - 1 >= 0 
+        ? currentItem - 1
+        : LAST_ITEM;
+      const newsId = CHOOSER_ITEMS[currentItem].newsId;
+
+      document.getElementById(`${newsId}`).scrollIntoView({inline: 'start', block: "start", behavior: "smooth"});
+
+      CHOOSER_ITEMS[currentItem].elem.classList.add('news__chooser-item_active');
+    });
+    nextBtn.on('click', function() {
+      CHOOSER_ITEMS[currentItem].elem.classList.remove('news__chooser-item_active');
+      
+      currentItem = currentItem + 1 > LAST_ITEM 
+        ? 0
+        : currentItem + 1;
+      const newsId = CHOOSER_ITEMS[currentItem].newsId;
+
+      document.getElementById(`${newsId}`).scrollIntoView({inline: 'start', block: "start", behavior: "smooth"});
+
+      CHOOSER_ITEMS[currentItem].elem.classList.add('news__chooser-item_active');
+    });
+   
     const affiliatesCollection = $('.affiliates__table .slider-affiliates-value');
     const AFFILIATES = $.map(affiliatesCollection, function(elem) {
       const value = parseFloat(elem.textContent);
