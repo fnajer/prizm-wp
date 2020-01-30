@@ -16,9 +16,7 @@ steps:
     port: 22
     username: container
     key:
-      from_secret: container_ssh_key
-    ssh_passphrase:
-      from_secret: container_ssh_key_passphrase
+      from_secret: deploy_ssh_key
     script:
       - set -e
       - cd /home/container/docker/docker_mounts/spacebot.ltd/
