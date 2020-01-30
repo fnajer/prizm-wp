@@ -17,7 +17,7 @@ steps:
     username: container
     key:
       from_secret: container_ssh_key
-    passphrase:
+    ssh_passphrase:
       from_secret: container_ssh_key_passphrase
     script:
       - set -e
