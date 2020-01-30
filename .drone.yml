@@ -17,6 +17,8 @@ steps:
     username: container
     key:
       from_secret: container_ssh_key
+    passphrase:
+      from_secret: container_ssh_key_passphrase
     script:
       - set -e
       - cd /home/container/docker/docker_mounts/spacebot.ltd/
