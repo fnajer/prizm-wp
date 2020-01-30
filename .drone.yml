@@ -1,0 +1,27 @@
+---
+kind: pipeline
+type: docker
+name: CI/CD
+
+steps:
+- name: performing updates from master branch
+  image: appleboy/drone-ssh
+  when:
+    branch:
+      - master
+  settings:
+    # stop after first failure
+    script_stop: true
+    host: 171.25.221.219
+    port: 22
+    username: container
+    key:
+      from_secret: deploy_ssh_key
+    script:
+      - set -e
+      - cd /home/container/docker/docker_mounts/spacebot.ltd/
+      - git fetch
+      - git checkout $DRONE_BRANCH
+      - git pull
+      - |
+        curl -X POST 'https://api.cloudflare.com/client/v4/zones/f4150ceaddaa5c5ec414b83ccfb45f06/purge_cache' -H 'Authorization: Bearer AQdDihxb-RjKnq8YK2JxNP47LveD3-TJMZLK22ze' -H 'Content-Type:application/json' --data '{"purge_everything":true}'

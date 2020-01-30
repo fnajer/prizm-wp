@@ -18,24 +18,26 @@
  * @package WordPress
  */
 
+define( 'FORCE_SSL_ADMIN', false );
+
 // ** Параметры MySQL: Эту информацию можно получить у вашего хостинг-провайдера ** //
 /** Имя базы данных для WordPress */
-define( 'DB_NAME', 'prizmnew' );
+define( 'DB_NAME', "newprizmbotspace_db");
 
 /** Имя пользователя MySQL */
-define( 'DB_USER', 'prizmadmin' );
+define( 'DB_USER', "newprizmbot_usr");
 
 /** Пароль к базе данных MySQL */
-define( 'DB_PASSWORD', '123456' );
+define( 'DB_PASSWORD', "Wiel5eu3Ch");
 
 /** Имя сервера MySQL */
-define( 'DB_HOST', 'localhost' );
+define( 'DB_HOST', "db");
 
 /** Кодировка базы данных для создания таблиц. */
-define( 'DB_CHARSET', 'utf8' );
+define( 'DB_CHARSET', 'utf8');
 
 /** Схема сопоставления. Не меняйте, если не уверены. */
-define( 'DB_COLLATE', '' );
+define( 'DB_COLLATE', '');
 
 /**#@+
  * Уникальные ключи и соли для аутентификации.
