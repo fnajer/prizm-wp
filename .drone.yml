@@ -25,4 +25,5 @@ steps:
       - git fetch
       - git checkout $DRONE_BRANCH
       - git pull
-      - curl -X POST "https://api.cloudflare.com/client/v4/zones/f4150ceaddaa5c5ec414b83ccfb45f06/purge_cache" -H "Authorization: Bearer AQdDihxb-RjKnq8YK2JxNP47LveD3-TJMZLK22ze" -H "Content-Type:application/json" --data '{"purge_everything":true}'
+      - |
+        curl -X POST 'https://api.cloudflare.com/client/v4/zones/f4150ceaddaa5c5ec414b83ccfb45f06/purge_cache' -H 'Authorization: Bearer AQdDihxb-RjKnq8YK2JxNP47LveD3-TJMZLK22ze' -H 'Content-Type:application/json' --data '{"purge_everything":true}'
