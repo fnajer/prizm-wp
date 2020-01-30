@@ -18,6 +18,8 @@
  * @package WordPress
  */
 
+define( 'FORCE_SSL_ADMIN', false );
+
 // ** Параметры MySQL: Эту информацию можно получить у вашего хостинг-провайдера ** //
 /** Имя базы данных для WordPress */
 define( 'DB_NAME', 'prizmnew' );
