@@ -383,7 +383,10 @@ js - поправляются пути полные для иконок пере
 	}
 }
 
-
+body,
+:root .has-very-dark-gray-color {
+	color: #fff;
+}
 
 /* promo width */
 html[lang='ru-RU'] .promo__container { 
