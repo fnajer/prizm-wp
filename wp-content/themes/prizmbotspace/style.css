@@ -392,6 +392,16 @@ body,
 	content: unset;
 }
 
+.page-404 {
+	font-size: 70px;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+}
+
 /* promo width */
 html[lang='ru-RU'] .promo__container { 
   max-width: 530px;
