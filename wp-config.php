@@ -28,7 +28,7 @@ define( 'DB_NAME', "newprizmbotspace_db");
 define( 'DB_USER', "newprizmbot_usr");
 
 /** Пароль к базе данных MySQL */
-define( 'DB_PASSWORD', "Wiel5eu3Ch");
+define( 'DB_PASSWORD', "eeGh4OhL1hu0chom0uu8");
 
 /** Имя сервера MySQL */
 define( 'DB_HOST', "db");
