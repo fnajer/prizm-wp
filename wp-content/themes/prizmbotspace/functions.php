@@ -348,6 +348,24 @@ function format_paragraph( $text ){
 	// 	echo $text;
 	// }
 }
+function get_format_paragraph( $text ) {
+	$result = preg_replace('/\[@\](.*?)\[@\]/', "<span class='text-purple'>$1</span>", $text);
+	$result = preg_replace('/\[B\](.*?)\[B\]/', "<b>$1</b>", $result);
+	return $result;
+}
+
+add_action( 'vc_before_init', 'prizmbotspace_vc_shortcodes' );
+function prizmbotspace_vc_shortcodes() {
+		$shortcode_heading_file = get_template_directory() . '/vc-elements/heading.php';
+		$shortcode_paragraph_file = get_template_directory() . '/vc-elements/paragraph.php';
+		$shortcode_quote_file = get_template_directory() . '/vc-elements/quote.php';
+		$shortcode_spoiler_file = get_template_directory() . '/vc-elements/spoiler.php';
+
+		require_once($shortcode_heading_file);
+		require_once($shortcode_paragraph_file);
+		require_once($shortcode_quote_file);
+		require_once($shortcode_spoiler_file);
+}
 
 /**
  * Implement the Custom Header feature.
