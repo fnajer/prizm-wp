@@ -388,6 +388,10 @@ body,
 	color: #fff;
 }
 
+.container::before {
+	content: unset;
+}
+
 /* promo width */
 html[lang='ru-RU'] .promo__container { 
   max-width: 530px;
