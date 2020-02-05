@@ -64,7 +64,7 @@ class vcParagraph extends WPBakeryShortCode {
       );
        
       // Fill $html var with data
-      $html = '<p class="text">' . $text . '</p>';      
+      $html = '<p class="text">' . get_format_paragraph($text) . '</p>';      
        
       return $html;
        
@@ -75,77 +75,3 @@ class vcParagraph extends WPBakeryShortCode {
 
 // Element Class Init
 new vcParagraph();    
-
-
-
-/*
-Element Description: VC Heading 
-*/
- 
-// Element Class 
-// class vcHeading extends WPBakeryShortCode {
-     
-//   // Element Init
-//   function __construct() {
-//       add_action( 'init', array( $this, 'vc_heading_mapping' ) );
-//       add_shortcode( 'vc_heading ', array( $this, 'vc_heading_html' ) );
-//   }
-   
-//   // Element Mapping
-//   public function vc_heading_mapping() {
-//     // Stop all if VC is not enabled
-//     if ( !defined( 'WPB_VC_VERSION' ) ) {
-//       return;
-//     }
-          
-//     // Map the block with vc_map()
-//     vc_map( 
-//       array(
-//         'name' => __('Заголовок', 'text-domain'),
-//         'base' => 'vc_heading',
-//         'description' => __('Заголовок страницы', 'text-domain'), 
-//         'category' => __('Spacebot', 'text-domain'),   
-//         'icon' => 'icon-heart',            
-//         'params' => array(   
-                
-//             array(
-//                 'type' => 'textfield',
-//                 'holder' => 'h3',
-//                 'class' => 'title-class',
-//                 'heading' => __( 'Title', 'text-domain' ),
-//                 'param_name' => 'title',
-//                 'value' => __( 'Default value', 'text-domain' ),
-//                 'description' => __( 'Box Title', 'text-domain' ),
-//                 'admin_label' => false,
-//                 'weight' => 0,
-//                 'group' => 'Custom Group',
-//             )                  
-                
-//         )
-//       )
-//     );              
-//   } 
-   
-   
-//   // Element HTML
-  // public function vc_heading_html( $atts ) {
-  //     // Params extraction
-  //     extract(
-  //       shortcode_atts(
-  //           array(
-  //               'title'   => '',
-  //           ), 
-  //           $atts
-  //       )
-  //   );
-    
-  //   // Fill $html var with data
-  //   $html = '<h2 class="heading">' . $title . '</h2>';      
-    
-  //   return $html; 
-//   } 
-   
-// } // End Element Class
-
-// // Element Class Init
-// new vcHeading(); 

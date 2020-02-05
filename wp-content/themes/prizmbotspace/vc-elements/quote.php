@@ -96,8 +96,8 @@ class vcQuote extends WPBakeryShortCode {
       // Fill $html var with data
       $html = '
         <div class="system" ' . $marginHtml . '>
-            <h4 class="system__heading">' . $title . '</h4>
-            <p class="system__text">' . $text . '</p>
+            <h4 class="system__heading">' . get_format_paragraph($title) . '</h4>
+            <p class="system__text">' . get_format_paragraph($text) . '</p>
         </div>
       ';      
        
