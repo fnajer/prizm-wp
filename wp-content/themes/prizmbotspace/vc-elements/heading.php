@@ -73,7 +73,7 @@ class vcHeading extends WPBakeryShortCode {
       extract(
           shortcode_atts(
               array(
-                  'title'   => 'Default value',
+                  'title'   => 'Заголовок',
                   'size'   => 'big',
               ), 
               $atts
