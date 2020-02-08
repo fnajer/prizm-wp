@@ -22,16 +22,16 @@ define( 'FORCE_SSL_ADMIN', false );
 
 // ** Параметры MySQL: Эту информацию можно получить у вашего хостинг-провайдера ** //
 /** Имя базы данных для WordPress */
-define( 'DB_NAME', "newprizmbotspace_db");
+define( 'DB_NAME', 'newprizmbotspace_db');
 
 /** Имя пользователя MySQL */
-define( 'DB_USER', "newprizmbot_usr");
+define( 'DB_USER', 'newprizmbot_usr');
 
 /** Пароль к базе данных MySQL */
-define( 'DB_PASSWORD', "eeGh4OhL1hu0chom0uu8");
+define( 'DB_PASSWORD', 'eeGh4OhL1hu0chom0uu8');
 
 /** Имя сервера MySQL */
-define( 'DB_HOST', "db");
+define( 'DB_HOST', 'db');
 
 /** Кодировка базы данных для создания таблиц. */
 define( 'DB_CHARSET', 'utf8');
