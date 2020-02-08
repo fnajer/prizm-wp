@@ -5,7 +5,7 @@ name: CI/CD
 
 steps:
 - name: performing updates from master branch
-  image: appleboy/drone-ssh
+  image: appleboy/drone-ssh:1.5.5
   when:
     branch:
       - master
