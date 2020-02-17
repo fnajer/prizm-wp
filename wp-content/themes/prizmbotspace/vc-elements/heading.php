@@ -57,7 +57,20 @@ class vcHeading extends WPBakeryShortCode {
                     'admin_label' => false,
                     'weight' => 0,
                     'group' => 'Основное',
-                )               
+                  ),
+                  array(
+                    'type' => 'checkbox',
+                    'holder' => 'h3',
+                    'class' => 'title-class',
+                    'heading' => __( 'Margin', 'text-domain' ),
+                    'param_name' => 'margin',
+                    'value' => array('Enable'   => 'value' ),
+                    'description' => __( 'Отступ снизу', 'text-domain' ),
+                    'admin_label' => false,
+                    'weight' => 0,
+                    'group' => 'Дополнительно',
+                    'std' => 'value'
+                  ),                   
                       
               ),
           )
@@ -75,6 +88,7 @@ class vcHeading extends WPBakeryShortCode {
               array(
                   'title'   => 'Заголовок',
                   'size'   => 'big',
+                  'margin'  => true
               ), 
               $atts
           )
@@ -91,9 +105,12 @@ class vcHeading extends WPBakeryShortCode {
         $classHtml = 'heading-3';
       }
 
-
+      if ($margin)
+        $marginHtml = '';
+      else 
+        $marginHtml = 'style="margin-bottom: 0;"';
       // Fill $html var with data
-      $html = '<' . $sizeHtml . ' class="' . $classHtml . '">' . get_format_paragraph($title) . '</' . $sizeHtml .'>';      
+      $html = '<' . $sizeHtml . ' class="' . $classHtml . '" ' . $marginHtml . '>' . get_format_paragraph($title) . '</' . $sizeHtml .'>';      
        
       return $html;
        
