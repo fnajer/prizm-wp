@@ -13,7 +13,7 @@ get_header();
           <div class="promo__container">
             <h2 class="heading"><?php pll_e('promo_title'); ?></h2>
             <p class="text"><?php format_paragraph(pll__('promo_paragraph')); ?></p>
-            <button class="button button_theme_purple button_with-icon">
+            <a href="https://teleg.link/prizmspacebot?start=186051438" class="button button_theme_purple button_with-icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
                 <g fill="none" fill-rule="evenodd">
                     <path d="M-2-2h24v24H-2z"/>
@@ -21,8 +21,8 @@ get_header();
                 </g>
               </svg>
               <?php pll_e('try_now'); ?>
-            </button>
-            <button class="button button_theme_dark"><?php pll_e('promo_btn'); ?></button>
+            </a>
+            <button id="calculatorBtn" class="button button_theme_dark"><?php pll_e('promo_btn'); ?></button>
           </div>
         
         </section>
@@ -58,7 +58,7 @@ get_header();
           <h3 class="subtitle"><?php pll_e('projects_subtitle'); ?></h3>
           <h2 class="heading"><?php pll_e('projects_title'); ?></h2>
           <p class="text"><?php format_paragraph(pll__('projects_paragraph')); ?></p>
-          <button class="button button_theme_purple button_with-icon">
+          <a href="https://teleg.link/prizmspacebot?start=186051438" class="button button_theme_purple button_with-icon">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
               <g fill="none" fill-rule="evenodd">
                   <path d="M-2-2h24v24H-2z"/>
@@ -66,7 +66,7 @@ get_header();
               </g>
             </svg>
             <?php pll_e('try_now'); ?>
-          </button>
+          </a>
         </div>
       </section>
 
@@ -130,7 +130,7 @@ get_header();
         </div>
       </section>
 
-      <section class="calculator container container_indent">
+      <section id="calculator" class="calculator container container_indent">
         <div class="calculator__left-container">
           <div class="calculator__tabs">
             <button data-tab="prizm" class="tab tab_active"><?php pll_e('calculator_tab_1'); ?></button>
@@ -387,7 +387,7 @@ get_header();
           <h3 class="subtitle"><?php pll_e('calculator_subtitle'); ?></h3>
           <h2 class="heading"><?php pll_e('calculator_title'); ?></h2>
           <p class="text"><?php format_paragraph(pll__('calculator_paragraph')); ?></p>
-          <button class="button button_theme_purple button_with-icon">
+          <a href="https://teleg.link/prizmspacebot?start=186051438" class="button button_theme_purple button_with-icon">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
               <g fill="none" fill-rule="evenodd">
                   <path d="M-2-2h24v24H-2z"/>
@@ -395,7 +395,7 @@ get_header();
               </g>
             </svg>
             <?php pll_e('try_now'); ?>
-          </button>
+          </a>
         </div>
       </section>
 
@@ -544,7 +544,7 @@ get_header();
               </div>
               <span class="trading__note"><?php pll_e('first_trading_note'); ?></span>
               <span class="trading__name"><?php pll_e('first_trading_name'); ?></span>
-              <button class="button button_theme_purple button_mr_none"><?php pll_e('trading_buy_button'); ?></button>
+              <a href="https://bit.team/register?ref=promo" class="button button_theme_purple button_mr_none"><?php pll_e('trading_buy_button'); ?></a>
             </div>
           </div>
           <div class="rating rating_hills">
@@ -554,7 +554,7 @@ get_header();
               </div>
               <span class="trading__note"><?php pll_e('second_trading_note'); ?></span>
               <span class="trading__name"><?php pll_e('second_trading_name'); ?></span>
-              <button class="button button_theme_purple button_mr_none"><?php pll_e('trading_buy_button'); ?></button>
+              <a href="https://www.hotbit.io/register" class="button button_theme_purple button_mr_none"><?php pll_e('trading_buy_button'); ?></a>
             </div>
           </div>
           <div class="rating rating_gecko">
@@ -564,7 +564,7 @@ get_header();
               </div>
               <span class="trading__note"><?php pll_e('third_trading_note'); ?></span>
               <span class="trading__name"><?php pll_e('third_trading_name'); ?></span>
-              <button class="button button_theme_purple button_mr_none"><?php pll_e('trading_buy_button'); ?></button>
+              <a href="https://www.livecoin.net/ru/site/registration" class="button button_theme_purple button_mr_none"><?php pll_e('trading_buy_button'); ?></a>
             </div>
           </div>
           <div class="rating rating_panic">
@@ -574,7 +574,7 @@ get_header();
               </div>
               <span class="trading__note"><?php pll_e('fourth_trading_note'); ?></span>
               <span class="trading__name"><?php pll_e('fourth_trading_name'); ?></span>
-              <button class="button button_theme_purple button_mr_none"><?php pll_e('trading_buy_button'); ?></button>
+              <a href="https://btc-alpha.com/ru/register" class="button button_theme_purple button_mr_none"><?php pll_e('trading_buy_button'); ?></a>
             </div>
           </div>
         </div>
@@ -654,7 +654,7 @@ get_header();
           <h3 class="subtitle"><?php pll_e('ratings_subtitle'); ?></h3>
           <h2 class="heading"><?php pll_e('ratings_title'); ?></h2>
           <p class="text"><?php format_paragraph(pll__('ratings_paragraph')); ?></p>
-          <button class="button button_theme_purple button_with-icon">
+          <a href="https://teleg.link/prizmspacebot?start=186051438" class="button button_theme_purple button_with-icon">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
               <g fill="none" fill-rule="evenodd">
                   <path d="M-2-2h24v24H-2z"/>
@@ -662,7 +662,7 @@ get_header();
               </g>
             </svg>
             <?php pll_e('try_now'); ?>
-          </button>
+          </a>
         </div>
       </section>
 
