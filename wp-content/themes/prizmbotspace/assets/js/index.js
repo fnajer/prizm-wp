@@ -161,6 +161,11 @@ console.log(/plus.svg/i.test(srcSvg));
       $(this).find(".faq__svg").attr('src', srcSvg);
     });
 
+    
+    $("#calculatorBtn").on("click", function() {
+      document.getElementById("calculator").scrollIntoView({inline: 'start', block: "start", behavior: "smooth"});
+    });
+
     const chooserItemsCollection = $('.news__chooser-item');
     const CHOOSER_ITEMS = $.map(chooserItemsCollection, function(elem) {
       return {
