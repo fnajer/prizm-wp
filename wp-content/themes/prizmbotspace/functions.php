@@ -356,7 +356,7 @@ function excerpt($limit) {
 }
 	
 function format_paragraph( $text ){
-	$result = preg_replace('/\[@\](@SPACEBOT|@spacebot)\[@\]/', "<a href='https://t-do.ru/prizmspacebot?start=186051438' class='text-purple'>$1</a>", $text);
+	$result = preg_replace('/\[@\](SPACEBOT|spacebot)\[@\]/', "<a href='https://t-do.ru/prizmspacebot?start=186051438' class='text-purple'>$1</a>", $text);
 	$result = preg_replace('/\[@\](.*?)\[@\]/', "<span class='text-purple'>$1</span>", $result);
 	$result = preg_replace('/\[B\](.*?)\[B\]/', "<b>$1</b>", $result);
 	echo $result;
@@ -369,7 +369,7 @@ function format_paragraph( $text ){
 	// }
 }
 function get_format_paragraph( $text ) {
-	$result = preg_replace('/\[@\](@SPACEBOT|@spacebot)\[@\]/', "<a href='https://t-do.ru/prizmspacebot?start=186051438' class='text-purple'>$1</a>", $text);
+	$result = preg_replace('/\[@\](SPACEBOT|spacebot)\[@\]/', "<a href='https://t-do.ru/prizmspacebot?start=186051438' class='text-purple'>$1</a>", $text);
 	$result = preg_replace('/\{@\}(.*?)\{@\}/', "<span class='text-purple'>$1</span>", $result);
 	$result = preg_replace('/\{B\}(.*?)\{B\}/', "<b>$1</b>", $result);
 	return $result;
