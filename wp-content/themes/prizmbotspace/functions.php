@@ -335,6 +335,20 @@ if (function_exists('pll_register_string')) {
 	pll_register_string('Footer Site Name', 'footer_site_name', 'Footer');
 	pll_register_string('Footer Made', 'footer_made', 'Footer');
 }
+
+function excerpt($limit) {
+	$excerpt = explode(' ', get_the_content(), $limit);
+	
+	if (count($excerpt)>=$limit) {
+		 array_pop($excerpt);
+		 $excerpt = implode(" ",$excerpt);
+	} else {
+		 $excerpt = implode(" ",$excerpt);
+	} 
+	$excerpt = preg_replace('@\[[^\]]*\]@','',$excerpt);
+	$crop = mb_substr(strip_tags($excerpt), 0, 95) . '...';
+	return $crop;
+}
 	
 function format_paragraph( $text ){
 	$result = preg_replace('/\[@\](@SPACEBOT|@spacebot)\[@\]/', "<a href='https://t-do.ru/prizmspacebot?start=186051438' class='text-purple'>$1</a>", $text);
