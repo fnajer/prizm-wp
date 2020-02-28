@@ -23,8 +23,9 @@
 				<span class="item__date"><?php the_time('M d, Y' ); ?></span>
 			</div>
 			<h4 class="item__title"><?php the_title(); ?></h4>
-			<img class="single-article__img" src="<?php the_post_thumbnail_url() ?>" width="350" height="176" alt="Logo of minter site" />
-			<p class="item__text"><?php echo strip_tags(get_the_content()); ?></p>
+			<div class="paragraph-wrapper"> <!-- the_content затирает все в родительском блоке -->
+				<?php the_content() ?>
+			</div>
 	  </div>
 	</div>
 </div><!-- #post-<?php the_ID(); ?> -->
