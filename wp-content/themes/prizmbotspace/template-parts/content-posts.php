@@ -22,7 +22,7 @@
 			?>
 			</span>
 			<h4 class="item__title"><?php the_title(); ?></h4>
-			<p class="item__text"><?php the_excerpt(); ?></p>
+			<p class="item__text"><?php echo excerpt(20); ?></p>
 	  </div>
 	  <div class="item__footer">
 			<a class="button button_theme_purple button_mr_none" href="<?php the_permalink(); ?>">Read</a>
