@@ -337,7 +337,11 @@ if (function_exists('pll_register_string')) {
 }
 
 function excerpt($limit) {
-	$excerpt = explode(' ', get_the_content(), $limit);
+	preg_match_all("@text=\"(.*?)\"@",
+		get_the_content(),
+		$out, PREG_PATTERN_ORDER);
+	$text = implode("", $out[1]);	
+	$excerpt = explode(' ', $text, $limit);
 	
 	if (count($excerpt)>=$limit) {
 		 array_pop($excerpt);
@@ -345,7 +349,8 @@ function excerpt($limit) {
 	} else {
 		 $excerpt = implode(" ",$excerpt);
 	} 
-	$excerpt = preg_replace('@\[[^\]]*\]@','',$excerpt);
+	//$excerpt = preg_replace('@\[[^\]]*\]@','',$excerpt);
+
 	$crop = mb_substr(strip_tags($excerpt), 0, 95) . '...';
 	return $crop;
 }
