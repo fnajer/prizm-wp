@@ -402,6 +402,18 @@ body,
 	text-align: center;
 }
 
+
+/* news item - make them with dynamical height */
+.news__item {
+	display: flex;
+	flex-direction: column;
+	height: initial;
+}
+.news__item-body {
+	flex-grow: 1;
+	height: initial;
+}
+
 /* promo width */
 html[lang='ru-RU'] .promo__container { 
   max-width: 530px;
