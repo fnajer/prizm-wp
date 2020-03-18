@@ -62,9 +62,9 @@ class vcParagraph extends WPBakeryShortCode {
               $atts
           )
       );
-       
+    error_log($text);
       // Fill $html var with data
-      $html = '<p class="text">' . get_format_paragraph($text) . '</p>';      
+      $html = '<p class="text" style="white-space: pre;">' . get_format_paragraph($text) . '</p>';      
        
       return $html;
        
